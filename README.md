@@ -1,4 +1,4 @@
-# cat-enetgy-adaptive
+# cat-energy-adaptive
 Интернет-магазин фитнес еды для котиков
 
 ## Дизайн 
