@@ -1,0 +1,30 @@
+@mixin list-reset() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin margin-reset() {
+  margin: 0;
+}
+
+@mixin padding-reset() {
+  padding: 0;
+}
+
+@mixin indent ($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin font-options($size: 14px, $leading: 18px, $weight: 400) {
+  font-size: $size;
+  line-height: $leading;
+  font-weight: $weight;
+}
+
+@mixin fieldset-reset() {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

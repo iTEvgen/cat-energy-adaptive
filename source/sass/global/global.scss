@@ -1,9 +1,20 @@
-img {
-  max-width: 100%;
-  height: auto;
+.page {
+  height: 100%;
 }
 
-.visually-hidden {
+.page__body {
+  @include indent(0, 0);
+  @include font-options();
+  min-width: 320px;
+  font-family: $arial;
+  word-wrap: break-word;
+  color: $basic-black;
+  background-color: $basic-white;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -14,4 +25,23 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.button {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
