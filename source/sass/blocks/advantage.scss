@@ -1,0 +1,22 @@
+.advantage {
+  margin-bottom: 42px;
+}
+
+.advantage__header {
+  @include font-options(36px, 40px);
+  font-family: $oswald;
+}
+
+.advantage__list {
+  @include list-reset();
+}
+
+.advantage__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.advantage__text {
+  color: $basic-dark--600;
+}

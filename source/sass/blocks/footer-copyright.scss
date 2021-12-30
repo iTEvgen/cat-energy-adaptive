@@ -1,0 +1,5 @@
+.copyright__link {
+  @include font-options(16px, 20px);
+  color: $basic-dark--600;
+  text-decoration: none;
+}
