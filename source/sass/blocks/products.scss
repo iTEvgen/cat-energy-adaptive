@@ -1,0 +1,33 @@
+.products {
+  margin-bottom: 27px;
+}
+
+.products__list {
+  @include list-reset();
+}
+
+.products__item {
+  padding: 30px 20px 18px 20px;
+  background-color: $basic-grey--100;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.products__title {
+  @include font-options(24px, 37px);
+  font-family: $oswald;
+}
+
+.products__text {
+  color: $basic-dark--600;
+}
+
+.products__link {
+  @include font-options(16px, 16px);
+  font-family: $oswald;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}

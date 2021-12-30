@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include list-reset();
+}
+
+.site-list__link,
+.user-list__item {
+  @include font-options(20px, 20px, 500);
+  font-family: $oswald;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-list {
+  display: none;
+}
