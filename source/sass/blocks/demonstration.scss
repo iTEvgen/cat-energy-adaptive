@@ -15,30 +15,29 @@
   @include font-options(36px, 40px);
 }
 
-.demonstration__text {
+.demonstration__text,
+.result__text {
   color: $basic-dark--600;
 }
 
-.result__title {
-  @include font-options(24px, 24px);
-
+.result__title,
+.demonstration__total {
   b {
     font-weight: 400;
   }
 }
 
+.result__title {
+  @include font-options(24px, 24px);
+}
+
 .result__text {
   @include font-options(12px, 12px);
-  color: $basic-dark--600;
 }
 
 .demonstration__total {
   line-height: 20px;
   text-transform: uppercase;
-
-  b {
-    font-weight: 400;
-  }
 }
 
 .demonstration__toggle {

@@ -29,8 +29,6 @@
 }
 
 .products__link {
-  @include font-options(16px, 16px);
   color: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
+  background-color: transparent;
 }
