@@ -37,11 +37,14 @@ img {
 }
 
 .button {
+  @include font-options(16px, 20px);
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
+  color: $basic-white;
   border: none;
   cursor: pointer;
+  background-color: $basic-green;
   box-sizing: border-box;
 }

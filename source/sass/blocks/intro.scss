@@ -3,7 +3,10 @@
   padding-top: 27px;
   font-family: $oswald;
   color: $basic-white;
-  background-image: url("../img/intro-bg@1x.jpg"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
+  background-image:
+      url("../img/intro-bg@1x.jpg"),
+      linear-gradient(to right, #64a73d 50%, #62a53b 50%)
+  ;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 320px 302px, 100% 302px;
@@ -17,11 +20,4 @@
 .intro__slogan {
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.intro__link {
-  color: inherit;
-  text-transform: uppercase;
-  background-color: $basic-green;
-  text-decoration: none;
 }

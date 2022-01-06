@@ -4,42 +4,44 @@
   background-color: $basic-grey--150;
 }
 
-.demonstration__header {
-  @include font-options(36px, 40px);
+.demonstration__header,
+.result__title,
+.demonstration__total,
+.demonstration__toggle {
   font-family: $oswald;
 }
 
-.demonstration__text {
+.demonstration__header {
+  @include font-options(36px, 40px);
+}
+
+.demonstration__text,
+.result__text {
   color: $basic-dark--600;
+}
+
+.result__title,
+.demonstration__total {
+  b {
+    font-weight: 400;
+  }
 }
 
 .result__title {
   @include font-options(24px, 24px);
-  font-family: $oswald;
-
-  b {
-    font-weight: 400;
-  }
 }
 
 .result__text {
   @include font-options(12px, 12px);
-  color: $basic-dark--600;
 }
 
 .demonstration__total {
-  font-family: $oswald;
   line-height: 20px;
   text-transform: uppercase;
-
-  b {
-    font-weight: 400;
-  }
 }
 
 .demonstration__toggle {
   @include font-options(16px, 20px);
-  font-family: $oswald;
   color: inherit;
   background-color: transparent;
 }

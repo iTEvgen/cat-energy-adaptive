@@ -15,9 +15,13 @@
   }
 }
 
+.products__title,
+.products__link {
+  font-family: $oswald;
+}
+
 .products__title {
   @include font-options(24px, 37px);
-  font-family: $oswald;
 }
 
 .products__text {
@@ -25,9 +29,6 @@
 }
 
 .products__link {
-  @include font-options(16px, 16px);
-  font-family: $oswald;
   color: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
+  background-color: transparent;
 }

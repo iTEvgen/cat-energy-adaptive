@@ -1,0 +1,12 @@
+.page-main__header {
+  margin-bottom: 39px;
+  font-family: $oswald;
+}
+
+.page-main__heading {
+  @include font-options(36px, 36px);
+}
+
+.page-main__lead {
+  text-transform: uppercase;
+}
