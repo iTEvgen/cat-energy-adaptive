@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="cat-energy.webmanifest">
   <title>Интернет магазин - cat-energy. Подбор программы</title>
 </head>
 <body class="page__body">
@@ -29,48 +34,48 @@
           </li>
         </ul>
         <button class="main-nav__toggle" type="button">
-          <span>Закрыть</span>
+          <span class="visually-hidden">Закрыть</span>
         </button>
       </nav>
     </div>
   </header>
-  <main class="page-form">
-    <div class="page-header">
-      <h1 class="page-header__header">Подбор программы</h1>
-      <p class="page-header__lead">Заполните анкету, и&nbsp;мы подберем программу питания для вашего кота</p>
+  <main class="page-main page-main--form">
+    <div class="page-main__header wrapper">
+      <h1 class="page-main__heading">Подбор программы</h1>
+      <p class="page-main__lead">Заполните анкету, и&nbsp;мы подберем программу питания для вашего кота</p>
     </div>
     <section class="program-selection">
       <h2 class="visually-hidden">Форма с личными данными</h2>
       <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection-form__wrap personal-data">
+        <fieldset class="selection-form__list personal-data">
           <legend class="visually-hidden">Данные котика</legend>
           <div class="wrapper">
-            <p class="personal-data__wrap">
+            <p class="personal-data__item ">
               <label class="personal-data__text" for="cat-name-id">Имя:*</label>
               <input class="personal-data__input" id="cat-name-id" type="text" name="cat-name" placeholder="Барсик">
             </p>
-            <p class="personal-data__wrap">
+            <p class="personal-data__item">
               <label class="personal-data__text" for="width-id">Вес (кг):*</label>
               <input class="personal-data__input" id="width-id" type="number" name="cat-weight" placeholder="7">
             </p>
-            <p class="personal-data__wrap">
+            <p class="personal-data__item">
               <label class="personal-data__text" for="age-id">Возраст (лет):</label>
               <input class="personal-data__input" id="age-id" type="number" name="cat-age" placeholder="7">
             </p>
           </div>
         </fieldset>
-        <fieldset class="selection-form__wrap cat-program">
+        <fieldset class="selection-form__list cat-program">
           <legend class="visually-hidden">Программа для котика</legend>
           <div class="wrapper">
-            <p class="cat-program__wrap">
+            <p class="cat-program__item">
               <label class="cat-program__text" for="slimming-id">Похудение</label>
               <input class="cat-program__radio" id="slimming-id" type="radio" name="cat-program" value="slimming" checked>
             </p>
-            <p class="cat-program__wrap">
+            <p class="cat-program__item">
               <label class="cat-program__text" for="weight-gain-id">Набор&nbsp;массы</label>
               <input class="cat-program__radio" id="weight-gain-id" type="radio" name="cat-program" value="weight-gain">
             </p>
-            <p class="cat-program__wrap">
+            <p class="cat-program__item">
               <label class="cat-program__text" for="advice-id">Не&nbsp;знаю&nbsp;(Нужен&nbsp;ваш&nbsp;совет)</label>
               <input class="cat-program__radio" id="advice-id" type="radio" name="cat-program" value="need-advice">
             </p>
@@ -79,26 +84,28 @@
         <fieldset class="selection-form__wrap personal-data">
           <legend class="selection-form__title">Контактные данные (владельца кота)</legend>
           <div class="wrapper">
-            <p class="personal-data__wrap">
+            <p class="personal-data__item">
               <label class="personal-data__text" for="email-id">E-mail:*</label>
               <input class="personal-data__input" id="email-id" type="email" name="user-email" placeholder="kuklachev@gmail.com">
             </p>
-            <p class="personal-data__wrap">
+            <p class="personal-data__item">
               <label class="personal-data__text" for="tel-id">Телефон:*</label>
               <input class="personal-data__input" id="tel-id" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90">
             </p>
           </div>
         </fieldset>
         <div class="selection-form__wrap user-comments">
-          <h3 class="user-comments__title" for="user-comment-id">Комментарий</h3>
+          <h3 class="user-comments__title">Комментарий</h3>
           <div class="wrapper">
-            <label class="visually-hidden" for="user-comment-id">Повадки кота</label>
-            <textarea class="user-comments__text" id="user-comment-id" name="user-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="user-comments__item">
+              <label class="visually-hidden" for="user-comment-id">Повадки кота</label>
+              <textarea class="user-comments__text" id="user-comment-id" name="user-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
         </div>
         <fieldset class="selection-form__wrap cat-program">
           <legend class="selection-form__title">Дополнительно</legend>
-          <div class="cat-program__wrap">
+          <div class="wrapper">
             <p class="cat-program__wrap">
               <label class="cat-program__text" for="sweetener=id">Сахарозаменитель</label>
               <input class="cat-program__checkbox" id="sweetener=id" type="checkbox" name="sweetener" checked>
@@ -118,7 +125,7 @@
           </div>
         </fieldset>
         <div class="selection-form__button form-button wrapper">
-          <button class="form-button__button" type="submit">Отправить заявку</button>
+          <button class="form-button__button button" type="submit">Отправить заявку</button>
           <p class="form-button__desc">* &#8212; Обязательные поля</p>
         </div>
       </form>
@@ -142,17 +149,17 @@
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="" target="_blank" aria-label="В контакте">
-              <svg class="social-list__icon" aria-hidden="true" focusable="false"></svg>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="23" height="16"></svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="" target="_blank" aria-label="Инстаграм">
-              <svg class="social-list__icon" aria-hidden="true" focusable="false"></svg>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="23" height="16"></svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="" target="_blank" aria-label="Фейсбук">
-              <svg class="social-list__icon" aria-hidden="true" focusable="false"></svg>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="23" height="16"></svg>
             </a>
           </li>
         </ul>
@@ -160,7 +167,7 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="">
           <span class="copyright__text">HTML&nbsp;Academy</span>
-          <svg class="copyright__icon"></svg>
+          <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34"></svg>
         </a>
       </div>
     </div>

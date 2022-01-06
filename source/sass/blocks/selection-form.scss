@@ -1,0 +1,15 @@
+.program-selection {
+  font-family: $oswald;
+  text-transform: uppercase;
+}
+
+.user-comments__title,
+.selection-form__title {
+  @include font-options(24px, 26px);
+  text-transform: capitalize;
+}
+
+.personal-data__input,
+.user-comments__text {
+  text-transform: inherit;
+}
