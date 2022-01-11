@@ -5,7 +5,6 @@
 
 .user-comments__title,
 .selection-form__title {
-  @include font-options(24px, 26px);
   text-transform: capitalize;
 }
 

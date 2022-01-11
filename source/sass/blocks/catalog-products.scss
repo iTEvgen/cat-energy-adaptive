@@ -11,15 +11,15 @@
 
 .card-list__stats,
 .card-list__lead,
-.card-list__button--all-item {
+.card-list__button--all-item,
+.product-card__stats {
   color: $basic-dark--600;
 }
 
 
-.card-list__title {
-  @include font-options(16px, 20px);
+.card-list__title,
+.product-card__title {
   color: $basic-dark--700;
-  font-family: $oswald;
   text-transform: uppercase;
 
   &--all-item {
@@ -36,4 +36,17 @@
   &--all-item {
     background-color: $basic-grey--100;
   }
+}
+
+.product-card__stats {
+  @include font-options(14px, 14px)
+}
+
+.promo {
+  background-color: $basic-green;
+}
+
+.promo__text {
+  text-align: center;
+  color: $basic-white;
 }

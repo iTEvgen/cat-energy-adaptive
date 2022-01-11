@@ -1,0 +1,30 @@
+.page-main__header {
+  margin-bottom: 39px;
+}
+
+.header {
+  font-family: $oswald;
+}
+
+.header__heading {
+  @include font-options(36px, 36px);
+}
+
+.header__lead {
+  text-transform: uppercase;
+}
+
+.header-two {
+  @include font-options(36px, 40px);
+  font-family: $oswald;
+}
+
+.header-three {
+  @include font-options(24px, 26px);
+  font-family: $oswald;
+}
+
+.header-four {
+  @include font-options(16px, 20px);
+  font-family: $oswald;
+}
