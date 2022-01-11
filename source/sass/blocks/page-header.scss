@@ -3,7 +3,7 @@
 }
 
 .site-list__link,
-.user-list__item {
+.user-list__link {
   @include font-options(20px, 20px, 500);
   font-family: $oswald;
   text-transform: uppercase;

@@ -4,15 +4,9 @@
   background-color: $basic-grey--150;
 }
 
-.demonstration__header,
 .result__title,
-.demonstration__total,
-.demonstration__toggle {
+.demonstration__total {
   font-family: $oswald;
-}
-
-.demonstration__header {
-  @include font-options(36px, 40px);
 }
 
 .demonstration__text,
