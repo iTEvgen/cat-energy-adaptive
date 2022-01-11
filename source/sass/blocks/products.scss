@@ -15,14 +15,6 @@
   }
 }
 
-.products__title{
-  font-family: $oswald;
-}
-
-.products__title {
-  @include font-options(24px, 37px);
-}
-
 .products__text {
   color: $basic-dark--600;
 }

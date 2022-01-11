@@ -2,7 +2,10 @@
   margin-bottom: 39px;
 }
 
-.header {
+.header,
+.header-two,
+.header-three,
+.header-four {
   font-family: $oswald;
 }
 
@@ -15,16 +18,13 @@
 }
 
 .header-two {
-  @include font-options(36px, 40px);
-  font-family: $oswald;
+  @include font-options(36px, 36px);
 }
 
 .header-three {
   @include font-options(24px, 26px);
-  font-family: $oswald;
 }
 
 .header-four {
   @include font-options(16px, 20px);
-  font-family: $oswald;
 }
