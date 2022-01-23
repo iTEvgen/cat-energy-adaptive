@@ -1,9 +1,4 @@
-.demonstration {
-  padding-top: 27px;
-  padding-bottom: 31px;
-  background-color: $basic-grey--150;
-}
-
+//Общие стили
 .result__title,
 .demonstration__total {
   font-family: $oswald;
@@ -21,12 +16,11 @@
   }
 }
 
-.result__title {
-  @include font-options(24px, 24px);
-}
-
-.result__text {
-  @include font-options(12px, 12px);
+//demonstration
+.demonstration {
+  padding-top: 27px;
+  padding-bottom: 31px;
+  background-color: $basic-grey--150;
 }
 
 .demonstration__total {
@@ -39,3 +33,14 @@
   color: inherit;
   background-color: transparent;
 }
+
+//result
+.result__title {
+  @include font-options(24px, 24px);
+}
+
+.result__text {
+  @include font-options(12px, 12px);
+}
+
+//slider

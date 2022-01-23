@@ -1,8 +1,4 @@
-.program-selection {
-  font-family: $oswald;
-  text-transform: uppercase;
-}
-
+//Общие стили
 .user-comments__title,
 .selection-form__title {
   text-transform: capitalize;
@@ -11,4 +7,10 @@
 .personal-data__input,
 .user-comments__text {
   text-transform: inherit;
+}
+
+//program-selection
+.program-selection {
+  font-family: $oswald;
+  text-transform: uppercase;
 }

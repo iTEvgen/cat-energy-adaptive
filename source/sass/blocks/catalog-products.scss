@@ -1,12 +1,7 @@
-
+//общие стили
 .product-catalog__list,
 .additional-products__list {
   @include list-reset;
-}
-
-.card-list__container {
-  text-decoration: none;
-  color: inherit;
 }
 
 .card-list__stats,
@@ -30,7 +25,20 @@
 .card-list__stats,
 .card-list__lead {
   @include font-options(12px, 16px);
+
 }
+
+.stats-list,
+.stats-list * {
+  @include margin-reset
+}
+
+//product-catalog__list
+.card-list__container {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .card-list__button {
   &--all-item {
@@ -38,6 +46,7 @@
   }
 }
 
+//additional-products__list
 .product-card__stats {
   @include font-options(14px, 14px)
 }
