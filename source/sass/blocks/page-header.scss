@@ -6,14 +6,54 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    @include font-options(18px, 24px, 400);
+  }
+}
+
+.site-list__item,
+.user-list__item {
+  text-align: center;
+}
+
+//page-header
+.page-header__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 40px;
+    align-items: center;
+  }
+}
+
+.logo-header__img {
+  display: block;
 }
 
 //main-nav
+.main-nav {
+  justify-self: end;
+}
+
 .main-nav__list {
   @include list-reset();
 }
 
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 //site-list
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+  }
+}
 
 //user-list
 .user-list {
