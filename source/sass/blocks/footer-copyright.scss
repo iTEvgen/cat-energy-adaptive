@@ -1,5 +1,8 @@
 .copyright__link {
   @include font-options(16px, 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: $basic-dark--600;
   text-decoration: none;
 }
