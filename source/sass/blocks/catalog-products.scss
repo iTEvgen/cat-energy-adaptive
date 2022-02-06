@@ -25,12 +25,11 @@
 .card-list__stats,
 .card-list__lead {
   @include font-options(12px, 16px);
-
 }
 
 .stats-list,
 .stats-list * {
-  @include margin-reset
+  @include margin-reset;
 }
 
 //product-catalog__list
@@ -48,7 +47,7 @@
 
 //additional-products__list
 .product-card__stats {
-  @include font-options(14px, 14px)
+  @include font-options(14px, 14px);
 }
 
 .promo {

@@ -27,12 +27,9 @@
   }
 }
 
-.products__title{
-  font-family: $oswald;
-}
-
 .products__title {
   @include font-options(24px, 37px);
+  font-family: $oswald;
 }
 
 .products__text {
