@@ -1,12 +1,12 @@
-.demonstration {
-  padding-top: 27px;
-  padding-bottom: 31px;
-  background-color: $basic-grey--150;
-}
-
+//Общие стили
 .result__title,
-.demonstration__total {
+.result__total {
   font-family: $oswald;
+  text-transform: uppercase;
+
+  b {
+    font-weight: 400;
+  }
 }
 
 .demonstration__text,
@@ -14,11 +14,48 @@
   color: $basic-dark--600;
 }
 
-.result__title,
-.demonstration__total {
-  b {
-    font-weight: 400;
+//demonstration
+.demonstration {
+  padding-top: 27px;
+  padding-bottom: 31px;
+  background-color: $basic-grey--150;
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $basic-white 40%, $basic-grey--150 40%);
   }
+}
+
+.demonstration__grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+  }
+}
+
+.demonstration__toggle {
+  @include font-options(16px, 20px);
+  color: inherit;
+  background-color: transparent;
+}
+
+//result
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.result__list {
+  width: 124px;
 }
 
 .result__title {
@@ -29,13 +66,23 @@
   @include font-options(12px, 12px);
 }
 
-.demonstration__total {
+.result__total {
+  flex-grow: 1;
   line-height: 20px;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    margin-left: auto;
+    gap: 20px;
+    font-size: 20px;
+    text-align: right;
+  }
 }
 
-.demonstration__toggle {
-  @include font-options(16px, 20px);
-  color: inherit;
-  background-color: transparent;
+//slider
+.slider__controls {
+  display: flex;
+  justify-content: center;
 }

@@ -4,6 +4,12 @@
 
 .products__list {
   @include list-reset();
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+  }
 }
 
 .products__item {
@@ -13,6 +19,17 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+  
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.products__title {
+  @include font-options(24px, 37px);
+  font-family: $oswald;
 }
 
 .products__text {
