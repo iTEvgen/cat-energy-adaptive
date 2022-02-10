@@ -1,5 +1,23 @@
+.form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+}
+
+.form-button__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+  }
+}
+
 .form-button__desc {
   font-family: $arial;
-  text-align: center;
   text-transform: capitalize;
 }
