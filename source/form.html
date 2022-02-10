@@ -45,94 +45,96 @@
       <p class="header__lead">Заполните анкету, и&nbsp;мы подберем программу питания для вашего кота</p>
     </div>
     <section class="program-selection">
-      <h2 class="visually-hidden">Форма с личными данными</h2>
-      <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection-form__list personal-data">
-          <legend class="visually-hidden">Данные котика</legend>
-          <div class="wrapper">
-            <p class="personal-data__item ">
-              <label class="personal-data__text" for="cat-name-id">Имя:*</label>
-              <input class="personal-data__input" id="cat-name-id" type="text" name="cat-name" placeholder="Барсик">
-            </p>
-            <p class="personal-data__item">
-              <label class="personal-data__text" for="width-id">Вес (кг):*</label>
-              <input class="personal-data__input" id="width-id" type="number" name="cat-weight" placeholder="7">
-            </p>
-            <p class="personal-data__item">
-              <label class="personal-data__text" for="age-id">Возраст (лет):</label>
-              <input class="personal-data__input" id="age-id" type="number" name="cat-age" placeholder="7">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="selection-form__list cat-program">
-          <legend class="visually-hidden">Программа для котика</legend>
-          <div class="wrapper">
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="slimming-id">Похудение</label>
-              <input class="cat-program__radio" id="slimming-id" type="radio" name="cat-program" value="slimming" checked>
-            </p>
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="weight-gain-id">Набор&nbsp;массы</label>
-              <input class="cat-program__radio" id="weight-gain-id" type="radio" name="cat-program" value="weight-gain">
-            </p>
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="advice-id">Не&nbsp;знаю&nbsp;(Нужен&nbsp;ваш&nbsp;совет)</label>
-              <input class="cat-program__radio" id="advice-id" type="radio" name="cat-program" value="need-advice">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="selection-form__list personal-data">
-          <legend class="selection-form__title header-three">Контактные данные (владельца кота)</legend>
-          <div class="wrapper">
-            <p class="personal-data__item">
-              <label class="personal-data__text" for="email-id">E-mail:*</label>
-              <input class="personal-data__input" id="email-id" type="email" name="user-email" placeholder="kuklachev@gmail.com">
-            </p>
-            <p class="personal-data__item">
-              <label class="personal-data__text" for="tel-id">Телефон:*</label>
-              <input class="personal-data__input" id="tel-id" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90">
-            </p>
-          </div>
-        </fieldset>
-        <div class="selection-form__list user-comments">
-          <h3 class="user-comments__title header-three">Комментарий</h3>
-          <div class="wrapper">
-            <div class="user-comments__item">
-              <label class="visually-hidden" for="user-comment-id">Повадки кота</label>
-              <textarea class="user-comments__text" id="user-comment-id" name="user-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <div class="wrapper">
+        <h2 class="visually-hidden">Форма с личными данными</h2>
+        <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="selection-form__list selection-form__list--mdfElemOne personal-data">
+            <legend class="visually-hidden">Данные котика</legend>
+            <div class="personal-data__list">
+              <p class="personal-data__item">
+                <label class="personal-data__text" for="cat-name-id">Имя:*</label>
+                <input class="personal-data__input" id="cat-name-id" type="text" name="cat-name" placeholder="Барсик">
+              </p>
+              <p class="personal-data__item">
+                <label class="personal-data__text" for="width-id">Вес (кг):*</label>
+                <input class="personal-data__input" id="width-id" type="number" name="cat-weight" placeholder="7">
+              </p>
+              <p class="personal-data__item">
+                <label class="personal-data__text" for="age-id">Возраст (лет):</label>
+                <input class="personal-data__input" id="age-id" type="number" name="cat-age" placeholder="7">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="selection-form__list selection-form__list--mdfElemTwo cat-program">
+            <legend class="visually-hidden">Программа для котика</legend>
+            <div class="cat-program__list">
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="slimming-id">Похудение</label>
+                <input class="cat-program__radio" id="slimming-id" type="radio" name="cat-program" value="slimming" checked>
+              </p>
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="weight-gain-id">Набор&nbsp;массы</label>
+                <input class="cat-program__radio" id="weight-gain-id" type="radio" name="cat-program" value="weight-gain">
+              </p>
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="advice-id">Не&nbsp;знаю&nbsp;(Нужен&nbsp;ваш&nbsp;совет)</label>
+                <input class="cat-program__radio" id="advice-id" type="radio" name="cat-program" value="need-advice">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="selection-form__list personal-data">
+            <legend class="selection-form__title header-three">Контактные данные (владельца кота)</legend>
+            <div class="personal-data__list personal-data__container">
+              <p class="personal-data__item">
+                <label class="personal-data__text" for="email-id">E-mail:*</label>
+                <input class="personal-data__input" id="email-id" type="email" name="user-email" placeholder="kuklachev@gmail.com">
+              </p>
+              <p class="personal-data__item">
+                <label class="personal-data__text" for="tel-id">Телефон:*</label>
+                <input class="personal-data__input" id="tel-id" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90">
+              </p>
+            </div>
+          </fieldset>
+          <div class="selection-form__list user-comments">
+            <h3 class="user-comments__title header-three">Комментарий</h3>
+            <div class="user-comments__list">
+              <div class="user-comments__item">
+                <label class="visually-hidden" for="user-comment-id">Повадки кота</label>
+                <textarea class="user-comments__text" id="user-comment-id" name="user-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </div>
-        </div>
-        <fieldset class="selection-form__list cat-program">
-          <legend class="selection-form__title header-three">Дополнительно</legend>
-          <div class="wrapper">
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="sweetener=id">Сахарозаменитель</label>
-              <input class="cat-program__checkbox" id="sweetener=id" type="checkbox" name="sweetener" checked>
-            </p>
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="water-id">Питьевая вода</label>
-              <input class="cat-program__checkbox" id="water-id" type="checkbox" name="drinking-water">
-            </p>
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="milk-id">Молоко</label>
-              <input class="cat-program__checkbox" id="milk-id" type="checkbox" name="milk">
-            </p>
-            <p class="cat-program__item">
-              <label class="cat-program__text" for="vitamins-id">Витамины</label>
-              <input class="cat-program__checkbox" id="vitamins-id" type="checkbox" name="vitamins">
-            </p>
+          <fieldset class="selection-form__list cat-program cat-program--mdfElemTwo">
+            <legend class="selection-form__title header-three">Дополнительно</legend>
+            <div class="cat-program__list cat-program__container">
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="sweetener=id">Сахарозаменитель</label>
+                <input class="cat-program__checkbox" id="sweetener=id" type="checkbox" name="sweetener" checked>
+              </p>
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="water-id">Питьевая вода</label>
+                <input class="cat-program__checkbox" id="water-id" type="checkbox" name="drinking-water">
+              </p>
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="milk-id">Молоко</label>
+                <input class="cat-program__checkbox" id="milk-id" type="checkbox" name="milk">
+              </p>
+              <p class="cat-program__item">
+                <label class="cat-program__text" for="vitamins-id">Витамины</label>
+                <input class="cat-program__checkbox" id="vitamins-id" type="checkbox" name="vitamins">
+              </p>
+            </div>
+          </fieldset>
+          <div class="selection-form__list form-button">
+            <button class="form-button__button button" type="submit">Отправить заявку</button>
+            <p class="form-button__desc">* &#8212; Обязательные поля</p>
           </div>
-        </fieldset>
-        <div class="selection-form__button form-button wrapper">
-          <button class="form-button__button button" type="submit">Отправить заявку</button>
-          <p class="form-button__desc">* &#8212; Обязательные поля</p>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
+    <div class="page-footer__contacts contacts contacts--mdfBgColor">
       <div class="contacts__wrapper">
         <p class="contacts__slogan">Приглашаем<br> к&nbsp;сотрудничеству<br> дилеров!</p>
         <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>

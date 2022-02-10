@@ -1,7 +1,18 @@
+.contacts {
+  &--mdfBgColor {
+    background-color: $basic-grey--100;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .contacts__slogan {
