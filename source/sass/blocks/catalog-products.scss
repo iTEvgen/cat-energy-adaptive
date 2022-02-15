@@ -1,4 +1,18 @@
 //общие стили
+.card-list__item,
+.card-list__container,
+.product-card,
+.product-card__item {
+  display: grid;
+}
+
+.stats-list__item,
+.price-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .product-catalog__list,
 .additional-products__list {
   @include list-reset;
@@ -7,7 +21,7 @@
 .card-list__stats,
 .card-list__lead,
 .card-list__button--all-item,
-.product-card__stats {
+.product-card__price {
   color: $basic-dark--600;
 }
 
@@ -32,12 +46,39 @@
   @include margin-reset;
 }
 
-//product-catalog__list
+//card-list
+.card-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-list__item {
+  grid-template-rows: auto max-content;
+  grid-auto-flow: row;
+
+  &--all-item {
+    text-align: center;
+  }
+}
+
 .card-list__container {
+  grid-template-columns: auto auto;
   text-decoration: none;
   color: inherit;
 }
 
+
+.card-list__picture {
+  grid-row: 1 / 3;
+}
 
 .card-list__button {
   &--all-item {
@@ -45,9 +86,55 @@
   }
 }
 
-//additional-products__list
-.product-card__stats {
+//stats-list
+
+//additional-products
+.additional-products__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 60px;
+  }
+}
+
+//product-card
+.product-card__item {
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-card__price {
   @include font-options(14px, 14px);
+}
+
+.product-card__button {
+
+  @media (min-width: $tablet-width) {
+
+  }
+  grid-column: 1 / -1;
+}
+
+//price-list
+.price-list__item {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    column-gap: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    column-gap: 0;
+  }
+
+  dt {
+    @media (min-width: $desktop-width) {
+      margin-right: auto;
+    }
+  }
 }
 
 .promo {
