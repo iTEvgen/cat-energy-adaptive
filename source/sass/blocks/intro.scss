@@ -42,11 +42,10 @@
 .intro__picture {
   @include margin-reset;
   height: 270px;
-  outline: 5px solid red;
-  outline-offset: -5px;
 
   img {
     display: block;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
