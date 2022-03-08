@@ -21,11 +21,46 @@
 }
 
 .advantage__item {
+  position: relative;
+  min-height: 60px;
+  padding-top: 3px;
+  padding-left: 80px;
+
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--mdfOne::before {
+    background-image: url("../../img/icon_leaf.svg");
+  }
+
+  &--mdfTwo::before {
+    background-image: url("../../img/icon_tub.svg");
+  }
+
+  &--mdfThree::before {
+    background-image: url("../../img/icon_eat.svg");
+  }
+
+  &--mdfFour::before {
+    background-image: url("../../img/icon_alarm.svg");
   }
 }
 
 .advantage__text {
+  @include margin-reset;
+
   color: $basic-dark--600;
 }
