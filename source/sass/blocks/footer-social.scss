@@ -1,3 +1,10 @@
+.page-footer__social {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: 1px solid $basic-grey--260;
+  border-bottom: 1px solid $basic-grey--260;
+}
+
 .page-footer__social-list {
   @include list-reset;
   margin-left: auto;
@@ -7,5 +14,25 @@
 .social-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 124px;
+}
+
+.social-list__link {
+  display: block;
+}
+
+.social-list__icon {
+  display: block;
+
+  path {
+    fill: $basic-dark--500;
+  }
+
+  &--mdfDecorElem {
+    path {
+      fill: none;
+      stroke: $basic-dark--500;
+    }
+  }
 }
