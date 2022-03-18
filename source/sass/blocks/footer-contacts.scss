@@ -7,7 +7,7 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px;
+  padding: 28px 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
@@ -16,6 +16,7 @@
 }
 
 .contacts__slogan {
+  @include font-options(16px, 20.9px);
   font-family: $oswald;
   color: $basic-dark;
   text-transform: uppercase;
@@ -24,4 +25,12 @@
 .contacts__address {
   line-height: 20px;
   color: $basic-dark--600;
+}
+
+.contacts__map-wrap {
+  height: 362px;
+  background-image: url("../../img/mobile-map-@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

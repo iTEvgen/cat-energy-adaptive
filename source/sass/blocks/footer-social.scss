@@ -1,6 +1,6 @@
 .page-footer__social {
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 4px 0;
+  margin-bottom: 21px;
   border-top: 1px solid $basic-grey--260;
   border-bottom: 1px solid $basic-grey--260;
 }
@@ -13,13 +13,21 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  width: 124px;
+  justify-content: center;
+  // column-gap: 36px;
+  // row-gap: 20px;
+  // min-width: 134px;
+  // max-width: 200px;
 }
 
 .social-list__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
 }
 
 .social-list__icon {

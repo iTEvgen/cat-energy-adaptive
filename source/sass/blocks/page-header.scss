@@ -34,7 +34,8 @@
 .logo-header {
   display: flex;
   justify-content: center;
-  height: 65px;
+  padding-top: 12px;
+  padding-bottom: 21px;
 
   @media (max-width: $mobile-only-width) {
     border-bottom: 1px solid $basic-grey--250;
@@ -45,7 +46,7 @@
   display: block;
 
   @media (max-width: $mobile-only-width) {
-    transform: translateX(-33px);
+    transform: translateX(-40px);
   }
 }
 
@@ -160,7 +161,7 @@
 .user-list__item {
   display: block;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   @media (max-width: $mobile-only-width) {
     border-bottom: 1px solid $basic-grey--250;

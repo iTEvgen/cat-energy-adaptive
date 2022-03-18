@@ -1,5 +1,11 @@
+//Общие
+.contacts__slogan,
+.contacts__address {
+  @include margin-reset;
+}
+
 .page-footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 31px;
 }
 
 .logo-footer {

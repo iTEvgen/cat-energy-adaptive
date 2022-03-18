@@ -34,14 +34,23 @@
   }
 }
 
+.intro__header {
+  @include margin-reset;
+  margin-bottom: 25px;
+}
+
 .intro__slogan {
+  @include margin-reset;
+  margin-bottom: 29px;
   line-height: 14px;
   text-transform: uppercase;
 }
 
 .intro__picture {
   @include margin-reset;
+  margin-bottom: 3px;
   height: 270px;
+
 
   img {
     display: block;
@@ -60,9 +69,12 @@
 }
 
 .intro__link {
+  @include font-options();
   justify-self: center;
   width: 280px;
-  height: 30px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
 
   @media (min-width: $tablet-width) {
     justify-self: left;

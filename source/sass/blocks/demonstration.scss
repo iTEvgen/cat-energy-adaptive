@@ -16,8 +16,8 @@
 
 //demonstration
 .demonstration {
-  padding-top: 27px;
-  padding-bottom: 31px;
+  padding-top: 29px;
+  padding-bottom: 26px;
   background-color: $basic-grey--150;
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,9 @@
 }
 
 .demonstration__list {
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 35px;
@@ -41,8 +44,23 @@
   }
 }
 
-.demonstration__image {
+.demonstration__header {
   @include margin-reset;
+  margin-bottom: 35px;
+}
+
+.demonstration__text {
+  @include margin-reset;
+  margin-bottom: 25px;
+}
+
+.demonstration__slider-wrap {
+  margin-bottom: 12px;
+}
+
+.demonstration__image {
+  width: 280px;
+  margin: 0 auto;
 
   img {
     display: block;
@@ -59,13 +77,13 @@
 }
 
 .demonstration__range-wrap {
-  width: 37%;
+  // order: 0;
+  width: 30%;
 }
 
 .demonstration__ranger {
   width: 100%;
-  height: 16px;
-  padding: 4px 6px;
+  padding: 3px 6px 3px 6px;
   background-color: $basic-white;
   border: 1px solid $basic-grey--350;
   border-radius: 6px;
@@ -74,7 +92,7 @@
 
 .demonstration__bar {
   width: 50%;
-  height: 100%;
+  height: 6px;
   background-color: $basic-green;
   border-radius: 6px;
   box-sizing: border-box;
@@ -88,7 +106,7 @@
 
 .demonstration__toggle {
   @include font-options(16px, 20px);
-  width: 70px;
+  width: 74px;
   height: 40px;
   color: inherit;
   background-color: transparent;
@@ -116,12 +134,12 @@
 .result__list {
   position: relative;
   width: 122px;
-  padding: 15px 0;
+  padding: 13px 0 17px 0;
   border: 1px solid $basic-grey--350;
   border-radius: 4px;
 
   @media (max-width: $mobile-only-width) {
-    margin-bottom: 25px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $tablet-width) {
@@ -139,7 +157,7 @@
   @include font-options(12px, 12px);
 
   position: absolute;
-  bottom: -18px;
+  bottom: -16px;
   padding: 0 20px;
   transform: translate(-50%, 0);
   background-color: $basic-grey--150;
