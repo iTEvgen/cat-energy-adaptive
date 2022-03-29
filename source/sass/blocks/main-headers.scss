@@ -19,10 +19,18 @@
 
 .header-two {
   @include font-options(36px, 36px);
+
+  @media (min-width: $tablet-width) {
+    @include font-options (60px, 60px);
+  }
 }
 
 .header-three {
   @include font-options(24px, 26px);
+
+  @media (min-width: $tablet-width) {
+    @include font-options(36px, 36px);
+  }
 }
 
 .header-four {

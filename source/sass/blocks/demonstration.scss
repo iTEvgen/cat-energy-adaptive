@@ -20,6 +20,10 @@
   padding-bottom: 26px;
   background-color: $basic-grey--150;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, $basic-white 40%, $basic-grey--150 40%);
   }
@@ -47,11 +51,28 @@
 .demonstration__header {
   @include margin-reset;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .demonstration__text {
   @include margin-reset;
   margin-bottom: 25px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    letter-spacing: 1px;
+
+    br {
+      display: inline;
+    }
+  }
 }
 
 .demonstration__slider-wrap {
