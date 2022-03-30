@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
+    background-image: linear-gradient(to bottom, $basic-white 53.3%, $basic-grey--150 53.3%);
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +44,7 @@
   }
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: 102px;
     }
   }
 }
@@ -66,6 +67,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     line-height: 24px;
     letter-spacing: 1px;
 
@@ -77,6 +79,10 @@
 
 .demonstration__slider-wrap {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .demonstration__image {
@@ -85,8 +91,29 @@
 
   img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 620px;
+    }
+
+    &--mdfElemOne {
+      img {
+        margin-right: -49%;
+      }
+    }
+
+    &--mdfElemTwo {
+      img {
+        margin-left: -157px;
+      }
+    }
   }
 }
 
@@ -148,6 +175,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    column-gap: 42px;
     width: 100%;
   }
 }
@@ -164,6 +192,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 14px 0 25px 0;
     width: 160px;
     height: 30px;
   }
@@ -172,6 +201,10 @@
 .result__title {
   @include margin-reset;
   @include font-options(24px, 24px);
+
+  @media (min-width: $tablet-width) {
+    @include font-options(30px, 37px);
+  }
 }
 
 .result__text {
@@ -184,9 +217,12 @@
   background-color: $basic-grey--150;
 
   @media (min-width: $tablet-width) {
+    @include font-options(14px, 14px);
+
     bottom: -7px;
     width: 85%;
     padding: 0;
+    background-color: $basic-white;
   }
 }
 
@@ -200,7 +236,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0;
-    align-self: flex-end;
+    align-self: center;
     margin-left: auto;
     row-gap: 9px;
     font-size: 20px;
@@ -213,6 +249,10 @@
   display: none;
 
   &--current {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
