@@ -7,11 +7,11 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: top;
   padding: 28px 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 64px 72px 57px 71px;
   }
 }
 
@@ -20,11 +20,25 @@
   font-family: $oswald;
   color: $basic-dark;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-options(20px, 26px);
+  }
 }
 
 .contacts__address {
   line-height: 20px;
   color: $basic-dark--600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
 }
 
 .contacts__map-wrap {
@@ -33,4 +47,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
