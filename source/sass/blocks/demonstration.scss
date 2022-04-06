@@ -22,7 +22,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    background-image: linear-gradient(to bottom, $basic-white 59.3%, $basic-grey--150 59.3%);
+    padding-bottom: 63px;
+    background-image: linear-gradient(to bottom, $basic-white 57.3%, $basic-grey--150 57.3%);
   }
 
   @media (min-width: $desktop-width) {
