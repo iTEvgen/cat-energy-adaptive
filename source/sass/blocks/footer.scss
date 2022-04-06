@@ -2,4 +2,12 @@
   padding-top: 39px;
   padding-bottom: 23px;
   background-color: $basic-grey--100;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 44px;
+    padding-bottom: 47px;
+  }
 }
