@@ -3,6 +3,12 @@
   margin-bottom: 21px;
   border-top: 1px solid $basic-grey--260;
   border-bottom: 1px solid $basic-grey--260;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__social-list {
@@ -16,10 +22,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  // column-gap: 36px;
-  // row-gap: 20px;
-  // min-width: 134px;
-  // max-width: 200px;
 }
 
 .social-list__link {
@@ -37,10 +39,27 @@
     fill: $basic-dark--500;
   }
 
-  &--mdfDecorElem {
+  &--mdfFb {
     path {
       fill: none;
       stroke: $basic-dark--500;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mdfVk {
+      width: 30px;
+      height: 20px;
+    }
+
+    &--mdfInst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--mdfFb {
+      width: 33px;
+      height: 33px;
     }
   }
 }

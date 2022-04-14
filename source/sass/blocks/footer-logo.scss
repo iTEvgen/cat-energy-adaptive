@@ -6,16 +6,30 @@
 
 .page-footer__logo {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .logo-footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+  }
 }
 
 .logo-footer__link {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 
