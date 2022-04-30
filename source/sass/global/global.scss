@@ -38,6 +38,10 @@ img {
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+
+    &--mdfPadding {
+      padding: 0 70px;
+    }
   }
 }
 

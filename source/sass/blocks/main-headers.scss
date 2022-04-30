@@ -11,9 +11,19 @@
 
 .header__heading {
   @include font-options(36px, 36px);
+  @include margin-reset;
+
+  @media (min-width: $tablet-width) {
+    @include font-options(60px, 60px); 
+
+    &--mdfMarForm {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .header__lead {
+  @include margin-reset;
   text-transform: uppercase;
 }
 
