@@ -4,3 +4,22 @@
     justify-content: space-between;
   }
 }
+
+.personal-data__item {
+  @include margin-reset;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 13px;
+}
+
+.personal-data__text {
+  color: $basic-dark--600;
+}
+
+.personal-data__input {
+  width: 100%;
+  padding: 13px 14px 14px 14px;
+  border: 1px solid $basic-grey--240;
+  box-sizing: border-box;
+}

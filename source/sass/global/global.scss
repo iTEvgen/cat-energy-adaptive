@@ -13,6 +13,12 @@
   background-color: $basic-white;
 }
 
+.page-main {
+  &--form {
+    padding-top: 27px;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -39,7 +45,7 @@ img {
   @media (min-width: $tablet-width) {
     padding: 0 30px;
 
-    &--mdfPadding {
+  &--mdfPaddingForm {
       padding: 0 70px;
     }
   }
