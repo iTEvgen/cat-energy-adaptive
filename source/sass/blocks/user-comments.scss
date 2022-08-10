@@ -1,0 +1,13 @@
+.user-comments__title {
+  @include margin-reset;
+
+  margin-bottom: 38px;
+}
+
+.user-comments__text {
+  padding: 9px 13px;
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  box-sizing: border-box;
+}

@@ -1,3 +1,20 @@
+.cat-program {
+  &--mdfElemOne {
+    padding-top: 29px;
+    padding-bottom: 25px;
+    border-top: 1px solid $basic-grey--260;
+    border-bottom: 1px solid $basic-grey--260;
+  }
+}
+
+.cat-program__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.cat-program__text {
+  padding-left: 45px;
+}
+
 .cat-program__container {
   @media (min-width: $tablet-width) {
     display: grid;

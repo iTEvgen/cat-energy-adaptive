@@ -10,16 +10,24 @@
   display: flex;
   align-items: baseline;
   gap: 14px;
-  margin-bottom: 13px;
+  
+  &--mdfElemOne {
+    gap: 11px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 .personal-data__text {
+  flex-shrink: 0;
   color: $basic-dark--600;
 }
 
 .personal-data__input {
   width: 100%;
-  padding: 13px 14px 14px 14px;
+  padding: 13px 14px 13px 14px;
   border: 1px solid $basic-grey--240;
   box-sizing: border-box;
 }

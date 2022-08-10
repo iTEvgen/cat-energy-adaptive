@@ -1,7 +1,11 @@
 //Общие стили
+.cat-program__item {
+  @include margin-reset;
+}
+
 .user-comments__title,
 .selection-form__title {
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .personal-data__input,
@@ -17,6 +21,8 @@
 
 //selection-form
 .selection-form {
+  font-size: 16px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -27,6 +33,22 @@
 
 .selection-form__list {
   @include fieldset-reset;
+
+  &--mdfElemOne {
+    margin-bottom: 22px;
+  }
+
+  &--mdfElemTwo {
+    margin-bottom: 27px;
+  }
+
+  &--mdfElemThree {
+    margin-bottom: 23px;
+  }
+
+  &--mdfElemFour {
+    margin-bottom: 21px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 5;
@@ -43,4 +65,8 @@
       grid-column: 3 / 5;
     }
   }
+}
+
+.selection-form__title {
+  margin-bottom: 33px;
 }
