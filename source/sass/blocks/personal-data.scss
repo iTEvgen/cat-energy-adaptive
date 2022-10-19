@@ -7,12 +7,35 @@
 
 .personal-data__item {
   @include margin-reset;
+  position: relative;
   display: flex;
   align-items: baseline;
   gap: 14px;
   
   &--mdfElemOne {
     gap: 11px;
+  }
+
+  &--mdfElemOne::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    width: 20px;
+    height: 15px;
+    background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mdfElemTwo::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 9px;
+    width: 24px;
+    height: 20px;
+    background-image: url("../../img/icon-phone-1.svg");
+    background-repeat: no-repeat;
   }
 
   &:not(:last-child) {
@@ -27,7 +50,7 @@
 
 .personal-data__input {
   width: 100%;
-  padding: 13px 14px 13px 14px;
+  padding: 13px 40px 13px 14px;
   border: 1px solid $basic-grey--240;
   box-sizing: border-box;
 }

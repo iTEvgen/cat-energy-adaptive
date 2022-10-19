@@ -50,8 +50,8 @@
       <h2 class="visually-hidden">Форма с личными данными</h2>
       <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="selection-form__list selection-form__list--mdfElemOne personal-data">
+          <legend class="visually-hidden">Данные котика</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
-            <legend class="visually-hidden">Данные котика</legend>
             <div class="personal-data__list">
               <p class="personal-data__item">
                 <label class="personal-data__text" for="cat-name-id">Имя:*</label>
@@ -69,8 +69,8 @@
           </div>
         </fieldset>
         <fieldset class="selection-form__list selection-form__list--mdfElemTwo cat-program cat-program--mdfElemOne">
+          <legend class="visually-hidden">Программа для котика</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
-            <legend class="visually-hidden">Программа для котика</legend>
             <div class="cat-program__list">
               <p class="cat-program__item">
                 <input class="cat-program__radio visually-hidden" id="slimming-id" type="radio" name="cat-program" value="slimming" checked>
@@ -88,14 +88,14 @@
           </div>
         </fieldset>
         <fieldset class="selection-form__list selection-form__list--mdfElemThree personal-data">
+          <legend class="selection-form__title header-three">Контактные данные (владельца кота)</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
-            <legend class="selection-form__title header-three">Контактные данные (владельца кота)</legend>
             <div class="personal-data__list personal-data__container">
               <p class="personal-data__item personal-data__item--mdfElemOne">
                 <label class="personal-data__text" for="email-id">E-mail:*</label>
                 <input class="personal-data__input" id="email-id" type="email" name="user-email" placeholder="kuklachev@gmail.com">
               </p>
-              <p class="personal-data__item">
+              <p class="personal-data__item personal-data__item--mdfElemTwo">
                 <label class="personal-data__text" for="tel-id">Телефон:*</label>
                 <input class="personal-data__input" id="tel-id" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90">
               </p>
@@ -113,25 +113,25 @@
             </div>
           </div>
         </div>
-        <fieldset class="selection-form__list cat-program cat-program--mdfElemTwo">
+        <fieldset class="selection-form__list selection-form__list--mdfElemFive cat-program cat-program--mdfElemTwo">
+          <legend class="selection-form__title selection-form__title--mdfElemOne header-three">Дополнительно</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
-            <legend class="selection-form__title header-three">Дополнительно</legend>
             <div class="cat-program__list cat-program__container">
               <p class="cat-program__item">
+                <input class="cat-program__checkbox visually-hidden" id="sweetener=id" type="checkbox" name="sweetener" checked>
                 <label class="cat-program__text" for="sweetener=id">Сахарозаменитель</label>
-                <input class="cat-program__checkbox" id="sweetener=id" type="checkbox" name="sweetener" checked>
               </p>
               <p class="cat-program__item">
+                <input class="cat-program__checkbox visually-hidden" id="water-id" type="checkbox" name="drinking-water">
                 <label class="cat-program__text" for="water-id">Питьевая вода</label>
-                <input class="cat-program__checkbox" id="water-id" type="checkbox" name="drinking-water">
               </p>
               <p class="cat-program__item">
+                <input class="cat-program__checkbox visually-hidden" id="milk-id" type="checkbox" name="milk">
                 <label class="cat-program__text" for="milk-id">Молоко</label>
-                <input class="cat-program__checkbox" id="milk-id" type="checkbox" name="milk">
               </p>
               <p class="cat-program__item">
+                <input class="cat-program__checkbox visually-hidden" id="vitamins-id" type="checkbox" name="vitamins">
                 <label class="cat-program__text" for="vitamins-id">Витамины</label>
-                <input class="cat-program__checkbox" id="vitamins-id" type="checkbox" name="vitamins">
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@
       </div>
     </div>
   </footer>
-  <!-- <script>
+  <script>
     
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
@@ -209,6 +209,6 @@
         navMain.classList.remove('main-nav--opened');
       }
     });
-  </script> -->
+  </script>
 </body>
 </html>

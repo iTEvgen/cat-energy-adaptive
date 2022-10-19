@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -13,6 +14,7 @@
 
 .form-button__button {
   width: 280px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     width: 282px;
@@ -20,6 +22,9 @@
 }
 
 .form-button__desc {
+  @include margin-reset;
   font-family: $arial;
-  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: initial;
 }

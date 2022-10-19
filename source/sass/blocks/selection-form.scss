@@ -50,6 +50,10 @@
     margin-bottom: 21px;
   }
 
+  &--mdfElemFive {
+    margin-bottom: 34px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 5;
   }
@@ -68,5 +72,14 @@
 }
 
 .selection-form__title {
+  padding: 0 20px;
   margin-bottom: 33px;
+
+  &--mdfElemOne {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
