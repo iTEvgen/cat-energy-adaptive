@@ -77,13 +77,25 @@
 
 
 .card-list__picture {
+  @include margin-reset;
   grid-row: 1 / 3;
+}
+
+.picture-list__img {
+  display: block;
 }
 
 .card-list__button {
   &--all-item {
     background-color: $basic-grey--100;
   }
+}
+
+//picture-list
+.picture-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 //stats-list
