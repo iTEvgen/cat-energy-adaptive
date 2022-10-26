@@ -11,7 +11,7 @@
   display: flex;
   align-items: baseline;
   gap: 14px;
-  
+
   &--mdfElemOne {
     gap: 11px;
   }
@@ -33,13 +33,13 @@
     top: 13px;
     right: 9px;
     width: 24px;
-    height: 20px;
+    height: 21px;
     background-image: url("../../img/icon-phone-1.svg");
     background-repeat: no-repeat;
   }
 
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 13.5px;
   }
 }
 
@@ -50,7 +50,7 @@
 
 .personal-data__input {
   width: 100%;
-  padding: 13px 40px 13px 14px;
+  padding: 13px 40px 12px 14px;
   border: 1px solid $basic-grey--240;
   box-sizing: border-box;
 }

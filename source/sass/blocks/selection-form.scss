@@ -33,23 +33,23 @@
 
 .selection-form__list {
   @include fieldset-reset;
-
+  // &--mdfMarBtmML
   &--mdfElemOne {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
-
+  // &--mdfMarBtmMH
   &--mdfElemTwo {
     margin-bottom: 27px;
   }
-
+  // &--mdfMarBtmM
   &--mdfElemThree {
     margin-bottom: 23px;
   }
-
+  // &--mdfMarBtmL
   &--mdfElemFour {
     margin-bottom: 21px;
   }
-
+  // &--mdfMarBtmH
   &--mdfElemFive {
     margin-bottom: 34px;
   }
