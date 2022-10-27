@@ -1,14 +1,20 @@
 .cat-program {
   &--mdfElemOne {
     padding-top: 22px;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
     border-top: 1px solid $basic-grey--260;
     border-bottom: 1px solid $basic-grey--260;
   }
 }
 
-.cat-program__item:not(:last-child) {
-  margin-bottom: 10px;
+.cat-program__item {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--mdfPaddL:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .cat-program__text {
@@ -31,17 +37,17 @@
 .cat-program__radio + .cat-program__text::before {
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid $basic-grey--350;
   border-radius: 50%;
 }
 
 .cat-program__radio:checked + .cat-program__text::after {
-  top: 9px;
-  left: 9px;
-  width: 13.5px;
-  height: 13.5px;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
   background-color: $basic-green;
   border-radius: 50%;
 }

@@ -49,7 +49,7 @@
     <section class="program-selection">
       <h2 class="visually-hidden">Форма с личными данными</h2>
       <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection-form__list selection-form__list--mdfElemOne personal-data">
+        <fieldset class="selection-form__list selection-form__list--mdfColLeft selection-form__list--mdfMarBtmLm personal-data">
           <legend class="visually-hidden">Данные котика</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
             <div class="personal-data__list">
@@ -57,18 +57,18 @@
                 <label class="personal-data__text" for="cat-name-id">Имя:*</label>
                 <input class="personal-data__input" id="cat-name-id" type="text" name="cat-name" placeholder="Барсик">
               </p>
-              <p class="personal-data__item">
+              <p class="personal-data__item personal-data__item--mdfGapM">
                 <label class="personal-data__text" for="width-id">Вес&nbsp;(кг):*</label>
                 <input class="personal-data__input" id="width-id" type="number" name="cat-weight" placeholder="7">
               </p>
-              <p class="personal-data__item">
+              <p class="personal-data__item personal-data__item--mdfGapL">
                 <label class="personal-data__text" for="age-id">Возраст&nbsp;(лет):</label>
                 <input class="personal-data__input" id="age-id" type="number" name="cat-age" placeholder="7">
               </p>
             </div>
           </div>
         </fieldset>
-        <fieldset class="selection-form__list selection-form__list--mdfElemTwo cat-program cat-program--mdfElemOne">
+        <fieldset class="selection-form__list selection-form__list--mdfColRight selection-form__list--mdfMarBtmM cat-program cat-program--mdfElemOne">
           <legend class="visually-hidden">Программа для котика</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
             <div class="cat-program__list">
@@ -87,8 +87,8 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="selection-form__list selection-form__list--mdfElemThree personal-data">
-          <legend class="selection-form__title header-three">Контактные данные (владельца кота)</legend>
+        <fieldset class="selection-form__list selection-form__list--mdfMarBtmMl personal-data">
+          <legend class="selection-form__title header-three">Контактные данные (владельца&nbsp;кота)</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
             <div class="personal-data__list personal-data__container">
               <p class="personal-data__item personal-data__item--mdfElemOne">
@@ -102,7 +102,7 @@
             </div>
           </div>
         </fieldset>
-        <div class="selection-form__list selection-form__list--mdfElemFour user-comments">
+        <div class="selection-form__list selection-form__list--mdfMarBtmL user-comments">
           <div class="wrapper wrapper--mdfPaddingForm">
             <h3 class="user-comments__title header-three">Комментарий</h3>
             <div class="user-comments__list">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <fieldset class="selection-form__list selection-form__list--mdfElemFive cat-program cat-program--mdfElemTwo">
+        <fieldset class="selection-form__list selection-form__list--mdfMarBtmH cat-program">
           <legend class="selection-form__title selection-form__title--mdfElemOne header-three">Дополнительно</legend>
           <div class="wrapper wrapper--mdfPaddingForm">
             <div class="cat-program__list cat-program__container">
@@ -121,11 +121,11 @@
                 <input class="cat-program__checkbox visually-hidden" id="sweetener=id" type="checkbox" name="sweetener" checked>
                 <label class="cat-program__text" for="sweetener=id">Сахарозаменитель</label>
               </p>
-              <p class="cat-program__item">
+              <p class="cat-program__item cat-program__item--mdfPaddL">
                 <input class="cat-program__checkbox visually-hidden" id="water-id" type="checkbox" name="drinking-water">
                 <label class="cat-program__text" for="water-id">Питьевая вода</label>
               </p>
-              <p class="cat-program__item">
+              <p class="cat-program__item cat-program__item--mdfPaddL">
                 <input class="cat-program__checkbox visually-hidden" id="milk-id" type="checkbox" name="milk">
                 <label class="cat-program__text" for="milk-id">Молоко</label>
               </p>
@@ -193,7 +193,7 @@
     </div>
   </footer>
   <script>
-    
+
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 

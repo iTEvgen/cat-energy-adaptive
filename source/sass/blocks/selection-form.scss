@@ -33,24 +33,24 @@
 
 .selection-form__list {
   @include fieldset-reset;
-  // &--mdfMarBtmML
-  &--mdfElemOne {
-    margin-bottom: 23px;
-  }
-  // &--mdfMarBtmMH
-  &--mdfElemTwo {
-    margin-bottom: 27px;
-  }
-  // &--mdfMarBtmM
-  &--mdfElemThree {
-    margin-bottom: 23px;
-  }
-  // &--mdfMarBtmL
-  &--mdfElemFour {
+
+  &--mdfMarBtmL {
     margin-bottom: 21px;
   }
-  // &--mdfMarBtmH
-  &--mdfElemFive {
+
+  &--mdfMarBtmLm {
+    margin-bottom: 23px;
+  }
+
+  &--mdfMarBtmMl {
+    margin-bottom: 24px;
+  }
+
+  &--mdfMarBtmM {
+    margin-bottom: 27px;
+  }
+
+  &--mdfMarBtmH {
     margin-bottom: 34px;
   }
 
@@ -58,13 +58,13 @@
     grid-column: 1 / 5;
   }
 
-  &--mdfElemOne {
+  &--mdfColLeft {
     @media (min-width: $desktop-width) {
       grid-column: 1 / 3;
     }
   }
 
-  &--mdfElemTwo {
+  &--mdfColRight {
     @media (min-width: $desktop-width) {
       grid-column: 3 / 5;
     }
@@ -73,7 +73,7 @@
 
 .selection-form__title {
   padding: 0 20px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   &--mdfElemOne {
     margin-bottom: 33px;
