@@ -68,6 +68,24 @@
     &--mdfGapL {
       gap: 18px;
     }
+
+    &--mdfElemOne {
+      gap: 20px;
+    }
+
+    &--mdfElemTwo {
+      gap: 14px;
+    }
+
+    &--mdfElemOne::before {
+      top: 18px;
+      right: 16px;
+    }
+
+    &--mdfElemTwo::before {
+      top: 16px;
+      right: 12px;
+    }
   }
 }
 

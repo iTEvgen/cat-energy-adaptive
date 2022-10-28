@@ -59,8 +59,20 @@
   }
 
   @media (min-width: $tablet-width) {
+    &--mdfMarBtmL {
+      margin-bottom: 59px;
+    }
+
     &--mdfMarBtmLm {
       margin-bottom: 72px;
+    }
+
+    &--mdfMarBtmMl {
+      margin-bottom: 65px;
+    }
+
+    &--mdfMarBtmM {
+      margin-bottom: 74px;
     }
   }
 
@@ -86,6 +98,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 69px;
+    margin-bottom: 77px;
   }
 }

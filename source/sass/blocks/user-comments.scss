@@ -2,6 +2,10 @@
   @include margin-reset;
 
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .user-comments__text {
@@ -10,4 +14,9 @@
   min-height: 150px;
   resize: vertical;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 18px;
+    min-height: 174px;
+  }
 }
