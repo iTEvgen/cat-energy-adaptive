@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   align-items: baseline;
-  gap: 13px;
+  gap: 14px;
 
   &--mdfGapL {
     gap: 15px;
@@ -53,6 +53,22 @@
   &:not(:last-child) {
     margin-bottom: 13.5px;
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--mdfGapM {
+      gap: 21px;
+    }
+
+    &--mdfGapL {
+      gap: 18px;
+    }
+  }
 }
 
 .personal-data__text {
@@ -65,4 +81,8 @@
   padding: 13px 40px 12px 14px;
   border: 1px solid $basic-grey--240;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 40px 13px 18px;
+  }
 }

@@ -5,6 +5,22 @@
     border-top: 1px solid $basic-grey--260;
     border-bottom: 1px solid $basic-grey--260;
   }
+
+  @media (min-width: $tablet-width) {
+    &--mdfElemOne {
+      @include padding-reset;
+      border: none;
+    }
+  }
+}
+
+.cat-program__list {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-left: 28px;
+    padding-bottom: 24px;
+    border: 1px solid $basic-grey--260;
+  }
 }
 
 .cat-program__item {
@@ -15,6 +31,12 @@
   &--mdfPaddL:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
 }
 
 .cat-program__text {
@@ -24,6 +46,11 @@
   cursor: pointer;
   user-select: none;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 40px;
+    padding-left: 60px;
+  }
 }
 
 .cat-program__radio + .cat-program__text::before,
@@ -32,15 +59,21 @@
 .cat-program__checkbox:checked + .cat-program__text::after {
   content: "";
   position: absolute;
+  box-sizing: border-box;
 }
 
 .cat-program__radio + .cat-program__text::before {
   top: 0;
   left: 0;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border: 1px solid $basic-grey--350;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .cat-program__radio:checked + .cat-program__text::after {
@@ -50,13 +83,20 @@
   height: 14px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .cat-program__checkbox + .cat-program__text::before {
   top: 1px;
   left: 0;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border: 1px solid $basic-grey--350;
 }
 

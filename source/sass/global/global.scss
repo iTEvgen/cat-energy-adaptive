@@ -17,6 +17,11 @@
   &--form {
     padding-top: 27px;
   }
+  @media (min-width: $tablet-width) {
+    &--form {
+      padding-top: 67px;
+    }
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -46,7 +51,7 @@ img {
     padding: 0 30px;
 
   &--mdfPaddingForm {
-      padding: 0 70px;
+      padding: 0 67px 0 70px;
     }
   }
 }

@@ -1,5 +1,9 @@
 .page-main__header {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .header,
@@ -19,12 +23,20 @@
 
   @media (min-width: $tablet-width) {
     @include font-options(60px, 60px);
+
+    &--mdfMarForm {
+      margin-bottom: 54px;
+    }
   }
 }
 
 .header__lead {
   @include margin-reset;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-options(20px, 30px);
+  }
 }
 
 .header-two {
