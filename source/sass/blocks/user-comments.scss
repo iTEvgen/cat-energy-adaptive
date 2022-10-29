@@ -2,9 +2,11 @@
   @include margin-reset;
 
   margin-bottom: 38px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+    padding-left: 0;
   }
 }
 

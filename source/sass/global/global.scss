@@ -20,6 +20,7 @@
 
 .page-main {
   &--form {
+    margin-bottom: 32px;
     padding-top: 27px;
   }
 
@@ -30,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     &--form {
+      margin-bottom: 72px;
       padding-top: 67px;
     }
   }
@@ -62,8 +64,8 @@ img {
   @media (min-width: $tablet-width) {
     padding: 0 30px;
 
-  &--mdfPaddingForm {
-      padding: 0 67px 0 70px;
+    &--mdfPaddingForm {
+      padding: 0 66px 0 70px;
     }
   }
 }

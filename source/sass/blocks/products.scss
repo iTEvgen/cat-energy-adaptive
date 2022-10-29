@@ -116,6 +116,6 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    @include font-options(20px, 20px)
+    @include font-options(20px, 20px);
   }
 }

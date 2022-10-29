@@ -16,11 +16,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
-  @media (min-width: $tablet-width) {
-    padding-top: 2px;
-  }
 }
 
 .logo-footer__link {
@@ -35,4 +30,10 @@
 
 .logo-footer__img {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-footer {
+    padding-top: 2px;
+  }
 }

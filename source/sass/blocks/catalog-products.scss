@@ -123,11 +123,9 @@
 }
 
 .product-card__button {
-
   @media (min-width: $tablet-width) {
-
+    grid-column: 1 / -1;
   }
-  grid-column: 1 / -1;
 }
 
 //price-list

@@ -2,13 +2,35 @@
 .site-list__link,
 .user-list__link {
   @include font-options(20px, 20px, 500);
+
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 21px;
   font-family: $oswald;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
 
+  @media (max-width: $mobile-only-width) {
+    border-bottom: 1px solid $basic-grey--250;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-options(18px, 24px, 400);
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &--current::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $basic-green;
+    }
   }
 }
 
@@ -27,6 +49,8 @@
 .page-header__container {
   position: relative;
   display: grid;
+  z-index: 10;
+
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto 1fr;
@@ -48,8 +72,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -168,33 +192,6 @@
   }
 }
 
-.site-list__link,
-.user-list__link {
-  position: relative;
-  display: block;
-  padding-top: 22px;
-  padding-bottom: 21px;
-
-  @media (max-width: $mobile-only-width) {
-    outline: 1px solid $basic-grey--250;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 8px;
-    padding-bottom: 8px;
-
-    &--current::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-green;
-    }
-  }
-}
-
 //user-list
 .user-list {
   display: none;
@@ -209,6 +206,7 @@
     position: absolute;
     width: 100%;
     background-color: $basic-white;
+    box-shadow: 0 10px 12px $alpha-black--160;
   }
 
   .main-nav--nojs .main-nav__toggle {
