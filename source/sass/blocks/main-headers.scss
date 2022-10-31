@@ -1,6 +1,10 @@
 .page-main__header {
   margin-bottom: 39px;
 
+  &--mdfMarCatalog {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
@@ -57,4 +61,45 @@
 
 .header-four {
   @include font-options(16px, 20px);
+}
+
+.decor-line {
+  display: flex;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    margin-top: 15px;
+    margin-left: 20px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      margin-right: 40px;
+      margin-top: 22px;
+      flex-shrink: 0;
+      flex-grow: 1;
+      height: 2px;
+      background-color: $basic-green;
+    }
+
+    &::after {
+      margin-top: 22px;
+      margin-left: 40px;
+      flex-grow: 5;
+    }
+
+    &--mdfGrow1::after {
+      flex-grow: 15;
+    }
+
+    &--mdfGrow2::after {
+      flex-grow: 16;
+    }
+  }
 }
