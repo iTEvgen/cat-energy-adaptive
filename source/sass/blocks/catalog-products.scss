@@ -74,9 +74,25 @@
   box-sizing: border-box;
 
   &--all-item {
+    position: relative;
     padding-top: 78px;
     text-align: center;
     border-bottom: 1px solid $basic-grey--200;
+  }
+
+  &--all-item::before,
+  &--all-item::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 145px;
+    width: 30px;
+    height: 2px;
+    background-color: $basic-grey--300;
+  }
+
+  &--all-item::after {
+    transform: rotate(90deg);
   }
 }
 
