@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    &--mdfMarCatalog {
+      margin-bottom: 84px;
+    }
   }
 }
 
@@ -61,6 +63,10 @@
 
 .header-four {
   @include font-options(16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    @include font-options(20px, 24px);
+  }
 }
 
 .decor-line {
