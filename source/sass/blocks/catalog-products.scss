@@ -110,7 +110,6 @@
 
 .card-list__container {
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr min-content;
   text-decoration: none;
   min-height: 140px;
   padding-top: 20px;
@@ -128,7 +127,7 @@
 
 .card-list__picture {
   @include margin-reset;
-  grid-row: 1 / 1;
+  grid-row: 1 / 3;
 
   @media (min-width: $tablet-width) {
     grid-row: auto;
