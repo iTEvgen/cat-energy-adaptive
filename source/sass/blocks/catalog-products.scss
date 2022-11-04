@@ -75,6 +75,7 @@
 .card-list__item {
   grid-template-rows: 1fr auto;
   grid-auto-flow: row;
+  min-height: 511px;
   padding: 0 20px 24px 20px;
   border-top: 1px solid $basic-grey--200;
   box-sizing: border-box;
@@ -131,7 +132,7 @@
 
   @media (min-width: $tablet-width) {
     grid-row: auto;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
 
     &--mdfElem1 {
       margin-bottom:28px;
@@ -199,6 +200,12 @@
   justify-content: center;
   align-items: flex-start;
   padding-top: 10px;
+
+  @media (max-width: $mobile-only-width) {
+    ~ * {
+      grid-column: 2 / 3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;
@@ -328,3 +335,7 @@
   text-align: center;
   color: $basic-white;
 }
+
+// .picture-list ~ * {
+//   grid-column: 2 / 3;
+// }
