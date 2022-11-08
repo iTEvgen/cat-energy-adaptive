@@ -75,7 +75,6 @@
 .card-list__item {
   grid-template-rows: 1fr auto;
   grid-auto-flow: row;
-  min-height: 511px;
   padding: 0 20px 24px 20px;
   border-top: 1px solid $basic-grey--200;
   box-sizing: border-box;
@@ -103,8 +102,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 40px 39px;
-    background-color: $basic-grey--100;
+    min-height: 511px;
+    // padding: 0 37px 40px 38px;
+    padding: 0;
+    background-image: linear-gradient(to bottom, $basic-white 15.9%, $basic-grey--100 15.9%);
     border: none;
   }
 }
@@ -112,7 +113,6 @@
 .card-list__container {
   grid-template-columns: 50% 50%;
   text-decoration: none;
-  min-height: 140px;
   padding-top: 20px;
   margin-bottom: 4px;
   color: inherit;
@@ -121,8 +121,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: auto;
     grid-template-rows: auto auto 1fr;
-    margin-bottom: 25px;
-    padding-top: 0;
+    margin-bottom: 0px;
+    padding: 27px 37px 0 38px;
+
+    &--mdfElem1 {
+      padding-top: 8px;
+    }
   }
 }
 
@@ -132,10 +136,11 @@
 
   @media (min-width: $tablet-width) {
     grid-row: auto;
-    margin-bottom: 34px;
+    height: 206px;
+    // margin-bottom: 34px;
 
     &--mdfElem1 {
-      margin-bottom:28px;
+      // margin-bottom:28px;
     }
   }
 }
@@ -163,7 +168,6 @@
   margin-bottom: 21px;
 }
 
-
 .picture-list__img {
   display: block;
 
@@ -184,13 +188,16 @@
 }
 
 .card-list__button {
-  padding-bottom: 10px;
+
+  box-sizing: border-box;
   &--all-item {
     background-color: $basic-grey--100;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
+    margin-left: 39px;
+    margin-right: 37px;
+    margin-bottom: 40px;
   }
 }
 
@@ -199,7 +206,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 10px;
+  margin-bottom: 34px;
+  // padding-top: 10px;
 
   @media (max-width: $mobile-only-width) {
     ~ * {
@@ -208,10 +216,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
+    // padding-top: 36px;
 
     &--mdfBig {
-      padding-top: 8px;
+      // padding-top: 8px;
     }
   }
 }
