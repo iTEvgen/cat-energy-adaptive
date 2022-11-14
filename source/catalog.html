@@ -166,7 +166,7 @@
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
             <a class="card-list__container card-list__container--mdfElem1" href="#">
               <figure class="card-list__picture picture-list picture-list--mdfElem1">
-                <img class="picture-list__img" src="img/catalog-3-1000-mobile@1x.png" width="84" height="101" alt="">
+                <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-3-1000-mobile@1x.png" width="84" height="101" alt="">
               </figure>
               <h3 class="card-list__title card-list__title--mdfElem1 header-four">Cat&nbsp;Energy<br> slim 1000&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -210,14 +210,20 @@
             <a class="card-list__button button" href="blank.html">Заказать</a>
           </li>
           <li class="card-list__item card-list__item--all-item" aria-label="Карточка показывает все товары">
-            <h3 class="card-list__title card-list__title--all-item header-four">Показать еще 100500 товаров</h3>
-            <p class="card-list__lead">На самом деле вкусов гораздо больше!</p>
-            <a class="card-list__button card-list__button--all-item button" href="blank.html">показать все</a>
+            <div class="card-list__container card-list__container--all-item">
+              <svg class="card-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true" focusable="false" width="30" height="30">
+                <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="1"/>
+                <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="1"/>
+              </svg>
+              <h3 class="card-list__title card-list__title--all-item header-four">Показать еще 100500 товаров</h3>
+              <p class="card-list__lead">На самом деле вкусов<br> гораздо больше!</p>
+              <a class="card-list__button card-list__button--all-item button" href="blank.html">показать все</a>
+            </div>
           </li>
         </ul>
     </section>
     <section class="additional-products">
-      <h2 class="additional-products__title header-three decor-line">Дополнительные товары</h2>
+      <h2 class="additional-products__title header-three decor-line decor-line--mdfGrow3">Дополнительные товары</h2>
       <div class="additional-products__container wrapper">
         <ul class="additional-products__list product-card">
           <li class="product-card__item">
