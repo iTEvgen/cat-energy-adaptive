@@ -309,7 +309,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(2, min-content);
     row-gap: 21px;
     align-items: baseline;
     padding: 24px 37px 28px 37px;
@@ -403,6 +403,17 @@
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    padding: 0 124px 0 78px;
+
+    &::before {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .promo__text {
@@ -413,4 +424,8 @@
   line-height: 20px;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
