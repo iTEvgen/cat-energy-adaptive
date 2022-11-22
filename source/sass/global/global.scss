@@ -11,6 +11,40 @@
   word-wrap: break-word;
   color: $basic-black;
   background-color: $basic-white;
+
+  // @media (min-width: $tablet-fix1) and (max-width: $tablet-fix2) {
+  //   width: 960px;
+  //   margin: 0 auto;
+  // }
+}
+
+.page-main {
+  &--form {
+    margin-bottom: 32px;
+    padding-top: 27px;
+  }
+
+  &--catalog {
+    margin-bottom: 35px;
+    padding-top: 27px;
+  }
+
+  // @media (min-width: $mobile-fix1) and (max-width: $mobile-fix2) {
+  //   width: 640px;
+  //   margin: 0 auto;
+  // }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      margin-bottom: 76px;
+      padding-top: 66px;
+    }
+
+    &--form {
+      margin-bottom: 72px;
+      padding-top: 67px;
+    }
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -36,13 +70,20 @@ img {
 .wrapper {
   padding: 0 20px;
 
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+
+    &--mdfPaddingForm {
+      padding: 0 66px 0 70px;
+    }
   }
 }
 
 .button {
   @include font-options(16px, 20px);
+  padding-top: 10px;
+  padding-bottom: 9px;
   font-family: $oswald;
   text-align: center;
   vertical-align: middle;

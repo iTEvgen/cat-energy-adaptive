@@ -1,9 +1,131 @@
+.cat-program {
+  &--mdfElemOne {
+    padding-top: 22px;
+    padding-bottom: 16px;
+    border-top: 1px solid $basic-grey--260;
+    border-bottom: 1px solid $basic-grey--260;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mdfElemOne {
+      @include padding-reset;
+      border: none;
+    }
+  }
+}
+
+.cat-program__list {
+  @media (min-width: $tablet-width) {
+    &--mdfBorders {
+      padding: 24px 28px;
+      border: 1px solid $basic-grey--260;
+    }
+  }
+}
+
+.cat-program__item {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--mdfPaddL:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.cat-program__text {
+  position: relative;
+  display: block;
+  line-height: 32px;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 40px;
+    padding-left: 60px;
+  }
+}
+
+.cat-program__radio + .cat-program__text::before,
+.cat-program__radio:checked + .cat-program__text::after,
+.cat-program__checkbox + .cat-program__text::before,
+.cat-program__checkbox:checked + .cat-program__text::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.cat-program__radio + .cat-program__text::before {
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-grey--350;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.cat-program__radio:checked + .cat-program__text::after {
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: $basic-green;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.cat-program__checkbox + .cat-program__text::before {
+  top: 1px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-grey--350;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.cat-program__checkbox:checked + .cat-program__text::after {
+  top: 9px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/icon-checkbox.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    left: 11px;
+  }
+}
+
 .cat-program__container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 40px;
+    row-gap: 19px;
+    column-gap: 56px;
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);

@@ -4,3 +4,103 @@
     justify-content: space-between;
   }
 }
+
+.personal-data__item {
+  @include margin-reset;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+
+  &--mdfGapL {
+    gap: 15px;
+  }
+
+  &--mdfGapM {
+    gap: 16px;
+  }
+
+  &--mdfElemOne {
+    gap: 11px;
+  }
+
+  &--mdfElemTwo {
+    gap: 9px;
+  }
+
+  &--mdfElemOne::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 20px;
+    height: 15px;
+    background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mdfElemTwo::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 9px;
+    width: 24px;
+    height: 21px;
+    background-image: url("../../img/icon-phone-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 13.5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--mdfGapM {
+      gap: 21px;
+    }
+
+    &--mdfGapL {
+      gap: 18px;
+    }
+
+    &--mdfElemOne {
+      gap: 20px;
+    }
+
+    &--mdfElemTwo {
+      gap: 14px;
+    }
+
+    &--mdfElemOne::before {
+      top: 18px;
+      right: 16px;
+    }
+
+    &--mdfElemTwo::before {
+      top: 16px;
+      right: 12px;
+    }
+  }
+}
+
+.personal-data__text {
+  flex-shrink: 0;
+  color: $basic-dark--600;
+}
+
+.personal-data__input {
+  width: 100%;
+  padding: 13px 40px 12px 14px;
+  border: 1px solid $basic-grey--240;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 40px 13px 18px;
+  }
+}

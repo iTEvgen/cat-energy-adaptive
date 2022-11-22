@@ -3,6 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: $basic-dark--600;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 22px;
+  }
+}
+
+.copyright__icon {
+  path {
+    fill: $basic-dark--500;
+  }
 }

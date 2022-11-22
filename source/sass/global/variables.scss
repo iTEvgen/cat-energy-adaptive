@@ -1,9 +1,14 @@
 $arial: "Arial", sans-serif;
 $oswald: "Oswald", "Arial", sans-serif;
 
+$mobile-fix1: 640px;
+$mobile-fix2: 765px;
 $tablet-width: 768px;
+$tablet-fix1: 960px;
+$tablet-fix2: 1259px;
 $desktop-width: 1260px;
-$tablet-only-width: 767px;
+$mobile-only-width: 767px;
+
 
 $basic-black: #000000;
 
@@ -23,6 +28,9 @@ $basic-grey--450: #bababa;
 $basic-grey--400: #c4c4c4;
 $basic-grey--350: #cdcdcd;
 $basic-grey--300: #d3d3d3;
+$basic-grey--260: #d9d9d9;
+$basic-grey--250: #e6e6e6;
+$basic-grey--240: #e7e7e7;
 $basic-grey--200: #ebebeb;
 $basic-grey--150: #eaeaea;
 $basic-grey--100: #f2f2f2;

@@ -1,5 +1,10 @@
 .advantage {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
+}
+
+.advantage__header {
+  @include margin-reset;
+  margin-bottom: 40px;
 }
 
 .advantage__list {
@@ -10,7 +15,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: row;
-    gap: 60px;
+    row-gap: 37px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,11 +27,117 @@
 }
 
 .advantage__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  position: relative;
+  min-height: 63px;
+  padding-top: 3px;
+  padding-left: 80px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--mdfOne::before {
+    background-image: url("../../img/icon_leaf.svg");
+  }
+
+  &--mdfTwo::before {
+    background-image: url("../../img/icon_tub.svg");
+  }
+
+  &--mdfThree::before {
+    background-image: url("../../img/icon_eat.svg");
+  }
+
+  &--mdfFour::before {
+    background-image: url("../../img/icon_alarm.svg");
+  }
+
+  @media (max-width: $mobile-only-width) {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    min-height: 280px;
+    padding: 145px 0 20px 0;
+
+    &::before {
+      top: 33px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &--mdfOne::after {
+      top: 32px;
+      right: 53px;
+      width: 71px;
+      height: 227px;
+      background-image: url("../../img/1.svg");
+    }
+
+    &--mdfTwo::after {
+      top: 31px;
+      right: 15px;
+      width: 113px;
+      height: 229px;
+      background-image: url("../../img/2.svg");
+    }
+
+    &--mdfThree::after {
+      top: 31px;
+      right: 13px;
+      width: 112px;
+      height: 232px;
+      background-image: url("../../img/3.svg");
+    }
+
+    &--mdfFour::after {
+      top: 33px;
+      right: 5px;
+      width: 121px;
+      height: 227px;
+      background-image: url("../../img/4.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
 .advantage__text {
+  @include margin-reset;
+
   color: $basic-dark--600;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    letter-spacing: 1.1px;
+
+    br {
+      display: inline;
+    }
+  }
 }

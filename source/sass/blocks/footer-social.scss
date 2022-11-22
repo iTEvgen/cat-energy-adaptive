@@ -1,3 +1,16 @@
+.page-footer__social {
+  padding: 4px 0;
+  margin-bottom: 12px;
+  border-top: 1px solid $basic-grey--260;
+  border-bottom: 1px solid $basic-grey--260;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
 .page-footer__social-list {
   @include list-reset;
   margin-left: auto;
@@ -6,6 +19,47 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  width: 124px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+}
+
+.social-list__icon {
+  display: block;
+
+  path {
+    fill: $basic-dark--500;
+  }
+
+  &--mdfFb {
+    path {
+      fill: none;
+      stroke: $basic-dark--500;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mdfVk {
+      width: 30px;
+      height: 20px;
+    }
+
+    &--mdfInst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--mdfFb {
+      width: 33px;
+      height: 33px;
+    }
+  }
 }

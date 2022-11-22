@@ -1,3 +1,39 @@
+//Общие
+.contacts__slogan,
+.contacts__address {
+  @include margin-reset;
+}
+
+.page-footer__logo {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer__link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
 .logo-footer__img {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-footer {
+    padding-top: 2px;
+  }
 }

@@ -1,5 +1,9 @@
 .products {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .products__list {
@@ -13,11 +17,54 @@
 }
 
 .products__item {
-  padding: 30px 20px 18px 20px;
+  position: relative;
+  padding: 35px 20px 19px 20px;
   background-color: $basic-grey--100;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../img/cat_back.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mdfElem::before {
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../img/cat_back-two.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 275px 62px 53px;
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+
+    &::before {
+      top: 80px;
+      left: auto;
+      right: 62px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--mdfElem::before {
+      top: 90px;
+      right: 29px;
+      width: 268px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,15 +75,47 @@
 }
 
 .products__title {
-  @include font-options(24px, 37px);
+  @include margin-reset;
+  margin-left: 71px;
+  margin-bottom: 35px;
   font-family: $oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .products__text {
+  @include margin-reset;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
   color: $basic-dark--600;
+  border-bottom: 1px solid $basic-grey--260;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-options(16px, 24px);
+    margin-bottom: 56px;
+    padding-bottom: 0;
+    color: $basic-black;
+    border-bottom: none;
+
+    br {
+      display: inline;
+    }
+  }
 }
 
 .products__link {
   color: inherit;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    @include font-options(20px, 20px);
+  }
 }
