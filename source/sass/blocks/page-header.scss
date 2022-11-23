@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;

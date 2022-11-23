@@ -34,9 +34,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 696px;
     background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64A73D 50%);
-    background-position: top right;
-    background-size: auto, auto;
+    background-position: top right, 100%;
+    background-size: auto 100%, auto;
   }
 }
 
@@ -50,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
   }
