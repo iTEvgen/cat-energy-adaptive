@@ -23,13 +23,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">Главная</a>
+              <a class="site-list__link site-list__link--current site-list__link-index site-list__link-index--current">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продуктов</a>
+              <a class="site-list__link site-list__link-index" href="catalog.html">Каталог продуктов</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link site-list__link-index" href="form.html">Подбор программы</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -54,7 +54,7 @@
       </div>
     </section>
     <section class="products">
-      <div class="wrapper">
+      <div class="products-wrapper wrapper">
         <h2 class="products__header visually-hidden">Продукты для похудения и набора массы</h2>
         <ul class="products__list">
           <li class="products__item">
@@ -71,7 +71,7 @@
       </div>
     </section>
     <section class="advantage">
-      <div class="wrapper">
+      <div class="advantage-wrapper wrapper">
         <h2 class="advantage__header header-two">Как это работает</h2>
         <ul class="advantage__list">
           <li class="advantage__item advantage__item--mdfOne">
@@ -90,7 +90,7 @@
       </div>
     </section>
     <section class="demonstration">
-      <div class="wrapper">
+      <div class="demonstration-wrapper wrapper">
         <div class="demonstration__grid">
           <div class="demonstration__list">
             <h2 class="demonstration__header header-two">Живой пример</h2>
@@ -115,20 +115,20 @@
               <figure class="demonstration__image demonstration__image--mdfElemTwo slider__item slider__item--current">
                 <img src="img/after-mobile-1@1x.png" alt=""  width="252" height="241">
               </figure>
-            </div>
-            <div class="demonstration__controls slider__controls">
-              <div class="demonstration__range-wrap">
-                <div class="demonstration__ranger slider__ranger">
-                  <div class="demonstration__bar slider__bar"></div>
+              <div class="demonstration__controls slider__controls">
+                <div class="demonstration__range-wrap">
+                  <div class="demonstration__ranger slider__ranger">
+                    <div class="demonstration__bar slider__bar"></div>
+                  </div>
+                  <span class="demonstration__control slider__control"></span>
                 </div>
-                <span class="demonstration__control slider__control"></span>
+                <button class="demonstration__toggle demonstration__toggle--back slider__toggle button" type="button">
+                  <span>Было</span>
+                </button>
+                <button class="demonstration__toggle demonstration__toggle--next slider__toggle button" type="button">
+                  <span>Стало</span>
+                </button>
               </div>
-              <button class="demonstration__toggle demonstration__toggle--back slider__toggle button" type="button">
-                <span>Было</span>
-              </button>
-              <button class="demonstration__toggle demonstration__toggle--next slider__toggle button" type="button">
-                <span>Стало</span>
-              </button>
             </div>
           </div>
         </div>

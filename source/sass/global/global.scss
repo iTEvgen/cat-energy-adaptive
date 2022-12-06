@@ -50,6 +50,10 @@
       padding-top: 67px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
