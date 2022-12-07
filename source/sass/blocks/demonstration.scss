@@ -17,19 +17,19 @@
 //demonstration
 .demonstration {
   padding-top: 29px;
-  padding-bottom: 26px;
+  padding-bottom: 14px;
   background-color: $basic-grey--150;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 63px;
+    padding-bottom: 52px;
     background-image: linear-gradient(to bottom, $basic-white 57.3%, $basic-grey--100 57.3%);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(to bottom , $basic-white 25.3%, $basic-grey--100 25.3%);
+    background-image: linear-gradient(to bottom , $basic-white 28.8%, $basic-grey--100 28.8%);
   }
 }
 
@@ -53,11 +53,11 @@
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      margin-bottom: 102px;
+      margin-bottom: 96px;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &:not(:last-child) {
       margin-bottom: 0;
     }
@@ -97,7 +97,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 435px;
     margin-bottom: 70px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -156,7 +161,7 @@
 
     &--mdfElemTwo {
       width: 285px;
-      background-image: linear-gradient(to bottom, $basic-white 25.3%, $basic-grey--150 25.3%);
+      background-image: linear-gradient(to bottom, $basic-white 28.8%, $basic-grey--150 28.8%);
     }
   }
 }
@@ -164,13 +169,15 @@
 .demonstration__controls {
   display: flex;
   justify-content: center;
-  column-gap: 11px;
   align-items: baseline;
+  margin-top: 12px;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    column-gap: 11px;
     align-items: center;
+    width: 100%;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
