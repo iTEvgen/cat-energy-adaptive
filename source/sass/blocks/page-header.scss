@@ -35,8 +35,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-  }
 
+    &--current::before {
+      bottom: -3px;
+    }
+  }
 }
 
 .site-list__item,
@@ -51,10 +54,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include padding-reset;
-    position: absolute;
-    top: 64px;
     width: 100%;
+    margin-bottom: 5px;
+    padding-top: 64px;
   }
 }
 
@@ -83,8 +85,8 @@
 .logo-header {
   display: flex;
   justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
   @media (max-width: $mobile-only-width) {
     border-bottom: 1px solid $basic-grey--250;
@@ -140,7 +142,7 @@
   @include padding-reset;
 
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 20px;
   width: 55px;
   height: 65px;

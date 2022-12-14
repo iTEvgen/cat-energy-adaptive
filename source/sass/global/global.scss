@@ -17,10 +17,14 @@
   //   margin: 0 auto;
   // }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1300px;
-  //   margin: 0 auto;
-  // }
+  @media (min-width: $desktop-width) {
+    &--mdfElem {
+      background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64A73D 50%);
+      background-position: top right, top;
+      background-size: 610px 694px, 100% 694px;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .page-main {
@@ -52,7 +56,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    
+    &--form {
+      padding-top: 108px;
+    }
   }
 }
 
