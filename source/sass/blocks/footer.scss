@@ -1,7 +1,7 @@
 .page-footer__grid {
   padding-top: 39px;
   padding-bottom: 23px;
-  background-color: $basic-grey--100;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,4 +10,17 @@
     padding-top: 44px;
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 46px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey--100;
+ }
 }

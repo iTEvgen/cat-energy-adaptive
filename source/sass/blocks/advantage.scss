@@ -1,5 +1,17 @@
 .advantage {
   margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.advantage-wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .advantage__header {
@@ -23,6 +35,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     gap: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 78px;
   }
 }
 
@@ -120,6 +136,22 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+
+    &--mdfOne::after {
+      right: 50px;
+    }
+
+    &--mdfTwo::after {
+      right: 11px;
+    }
+
+    &--mdfThree::after {
+      right: 10px;
+    }
+
+    &--mdfFour::after {
+      right: 0;
+    }
   }
 }
 

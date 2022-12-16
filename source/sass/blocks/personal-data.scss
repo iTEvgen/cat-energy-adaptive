@@ -87,6 +87,11 @@
       right: 12px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .personal-data__text {

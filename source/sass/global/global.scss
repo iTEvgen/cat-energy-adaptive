@@ -5,6 +5,8 @@
 .page__body {
   @include indent(0, 0);
   @include font-options();
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
   min-height: 100%;
   font-family: $arial;
@@ -16,6 +18,15 @@
   //   width: 960px;
   //   margin: 0 auto;
   // }
+
+  @media (min-width: $desktop-width) {
+    &--mdfElem {
+      background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64A73D 50%);
+      background-position: top right, top;
+      background-size: 610px 694px, 100% 694px;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .page-main {
@@ -43,6 +54,13 @@
     &--form {
       margin-bottom: 72px;
       padding-top: 67px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      margin-bottom: 82px;
+      padding-top: 79px;
     }
   }
 }
@@ -77,6 +95,17 @@ img {
     &--mdfPaddingForm {
       padding: 0 66px 0 70px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
+}
+
+.container {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 

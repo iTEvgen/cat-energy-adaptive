@@ -11,6 +11,11 @@
   @media (min-width: $tablet-width) {
     column-gap: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .copyright__icon {
