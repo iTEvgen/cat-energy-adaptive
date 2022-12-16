@@ -42,8 +42,8 @@
     </div>
   </header>
   <main class="page-main page-main--form">
-    <div class="page-main__header page-main__header--mdfMarForm header wrapper wrapper--mdfPaddingForm">
-      <h1 class="header__heading header__heading--mdfMarForm">Подбор программы</h1>
+    <div class="page-main__header container page-main__header--mdfMarForm header wrapper wrapper--mdfPaddingForm">
+      <h1 class="header__heading  header__heading--mdfMarForm">Подбор программы</h1>
       <p class="header__lead">Заполните анкету, и&nbsp;мы подберем<br> программу питания для вашего кота</p>
     </div>
     <section class="program-selection">
@@ -88,8 +88,8 @@
           </div>
         </fieldset>
         <fieldset class="selection-form__list selection-form__list--mdfMarBtmMl personal-data">
-          <legend class="selection-form__title header-three decor-line">Контактные данные<br> (владельца&nbsp;кота)</legend>
-          <div class="wrapper wrapper--mdfPaddingForm">
+          <legend class="selection-form__title header-three decor-line decor-line--grid"><span>Контактные данные<br> (владельца&nbsp;кота)</span></legend>
+          <div class="container wrapper wrapper--mdfPaddingForm">
             <div class="personal-data__list personal-data__container">
               <p class="personal-data__item personal-data__item--mdfElemOne">
                 <label class="personal-data__text" for="email-id">E-mail:*</label>
@@ -104,7 +104,7 @@
         </fieldset>
         <div class="selection-form__list selection-form__list--mdfMarBtmL user-comments">
           <h3 class="user-comments__title header-three decor-line decor-line--mdfGrow2">Комментарий</h3>
-          <div class="wrapper wrapper--mdfPaddingForm">
+          <div class="container wrapper wrapper--mdfPaddingForm">
             <div class="user-comments__list">
               <div class="user-comments__item">
                 <label class="visually-hidden" for="user-comment-id">Повадки кота</label>
@@ -115,7 +115,7 @@
         </div>
         <fieldset class="selection-form__list selection-form__list--mdfMarBtmH cat-program">
           <legend class="selection-form__title selection-form__title--mdfElemOne header-three decor-line decor-line--mdfGrow1">Дополнительно</legend>
-          <div class="wrapper wrapper--mdfPaddingForm">
+          <div class="container wrapper wrapper--mdfPaddingForm">
             <div class="cat-program__list cat-program__container">
               <p class="cat-program__item">
                 <input class="cat-program__checkbox visually-hidden" id="sweetener=id" type="checkbox" name="sweetener" checked>
@@ -136,9 +136,11 @@
             </div>
           </div>
         </fieldset>
-        <div class="selection-form__list form-button">
-          <button class="form-button__button button" type="submit">Отправить заявку</button>
-          <p class="form-button__desc">* &#8212; Обязательные поля</p>
+        <div class="selection-form__list ">
+          <div class="form-button container">
+            <button class="form-button__button button" type="submit">Отправить заявку</button>
+            <p class="form-button__desc">* &#8212; Обязательные поля</p>
+          </div>
         </div>
       </form>
     </section>
