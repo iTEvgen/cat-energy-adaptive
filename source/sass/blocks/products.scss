@@ -161,3 +161,17 @@
     @include font-options(20px, 20px);
   }
 }
+
+.products_link-icon {
+  vertical-align: 1px;
+  margin-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    vertical-align: 4px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
+}
