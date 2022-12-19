@@ -14,11 +14,6 @@
   color: $basic-black;
   background-color: $basic-white;
 
-  // @media (min-width: $tablet-fix1) and (max-width: $tablet-fix2) {
-  //   width: 960px;
-  //   margin: 0 auto;
-  // }
-
   @media (min-width: $desktop-width) {
     &--mdfElem {
       background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
@@ -40,11 +35,6 @@
     padding-top: 27px;
   }
 
-  // @media (min-width: $mobile-fix1) and (max-width: $mobile-fix2) {
-  //   width: 640px;
-  //   margin: 0 auto;
-  // }
-
   @media (min-width: $tablet-width) {
     &--catalog {
       margin-bottom: 76px;
@@ -58,6 +48,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--catalog {
+      margin-bottom: 86px;
+      padding-top: 79px;
+    }
+
     &--form {
       margin-bottom: 82px;
       padding-top: 79px;
