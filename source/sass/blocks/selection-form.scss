@@ -101,26 +101,17 @@
     }
 
     &--mdfColLeft {
+      @include padding-reset;
       grid-column: 1 / 3;
       width: 569px;
       margin-left: auto;
     }
 
     &--mdfColRight {
+      @include padding-reset;
       grid-column: 3 / 5;
       width: 568px;
       margin-right: auto;
-    }
-  }
-}
-
-.selection-form__list {
-  @media (min-width: $desktop-width) {
-    &--mdfColLeft,
-    &--mdfColRight {
-      .wrapper--mdfPaddingForm {
-        @include padding-reset;
-      }
     }
   }
 }
@@ -139,7 +130,7 @@
     margin-bottom: 77px;
 
     span br {
-        display: none;
+      display: none;
     }
 
     &--mdfElemOne {
