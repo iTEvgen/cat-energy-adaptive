@@ -259,6 +259,16 @@
       border-radius: 50%;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 4px $alpha-black--100;
+  }
+
+  &:active {
+    border-color: $basic-green;
+    box-shadow: 0 3px 5px $alpha-black--100;
+  }
 }
 
 .demonstration__toggle {
@@ -283,6 +293,19 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+  }
+}
+
+.demonstration__toggle:hover,
+.demonstration__toggle:focus {
+  span {
+    border-bottom: 1px solid $basic-grey;
+  }
+}
+
+.demonstration__toggle:active {
+  span {
+    border-bottom: none;
   }
 }
 

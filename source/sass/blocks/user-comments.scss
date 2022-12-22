@@ -15,7 +15,17 @@
   width: 100%;
   min-height: 150px;
   resize: vertical;
+  border: 1px solid $basic-grey--240;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $basic-grey--350;
+  }
+
+  &:focus {
+    outline: 2px solid $basic-dark--600;
+    outline-offset: -1px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 14px 18px;
