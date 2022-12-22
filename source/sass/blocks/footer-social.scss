@@ -63,3 +63,23 @@
     }
   }
 }
+
+.social-list__link:hover,
+.social-list__link:focus {
+  .social-list__icon {
+    path {
+      fill: $basic-green;
+    }
+
+    &--mdfFb {
+      path {
+        fill: none;
+        stroke: $basic-green;
+      }
+    }
+  }
+}
+
+.social-list__link:active {
+  opacity: 0.3;
+}

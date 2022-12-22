@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .products__item {
   position: relative;
-  padding: 35px 20px 19px 20px;
+  padding: 35px 20px 11px 20px;
   background-color: $basic-grey--100;
 
   &:not(:last-child) {
@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 76px 275px 62px 53px;
+    padding: 76px 275px 53px 53px;
 
     &:not(:last-child) {
       margin-bottom: 31px;
@@ -80,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 78px 52px 62px 52px;
+    padding: 78px 52px 55px 52px;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -124,7 +124,7 @@
 .products__text {
   @include margin-reset;
   padding-bottom: 22px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   color: $basic-dark--600;
   border-bottom: 1px solid $basic-grey--260;
 
@@ -134,7 +134,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-options(16px, 24px);
-    margin-bottom: 56px;
+    margin-bottom: 46px;
     padding-bottom: 0;
     color: $basic-black;
     border-bottom: none;
@@ -145,7 +145,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 20px;
 
     br {
       display: none;
@@ -154,11 +154,37 @@
 }
 
 .products__link {
+  display: block;
+  width: 124px;
+  text-align: left;
+  padding-right: 24px;
   color: inherit;
   background-color: transparent;
+  box-sizing: border-box;
+  background-image: url("../../img/bg-icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &:hover,
+  &:focus {
+    width: 132px;
+    padding-right: 30px;
+    background-image: url("../../img/bg-icon-arrow_focus.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     @include font-options(20px, 20px);
+
+    width: 154px;
+
+    &:hover,
+    &:focus {
+      width: 162px;
+    }
   }
 }
 
