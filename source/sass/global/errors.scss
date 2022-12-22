@@ -1,0 +1,98 @@
+/*disable*/
+
+// button link
+.intro__link.disabled,
+.card-list__button.disabled,
+.product-card__button.disabled,
+.form-button__button.disabled {
+  background-color: $basic-grey--450;
+  cursor: default;
+  opacity: 0.3;
+  outline: none;
+  color: $basic-white;
+}
+
+.card-list__button {
+  &--all-item.disabled {
+    color: $basic-dark--600;
+  }
+}
+
+// social
+.copyright__link.disabled,
+.social-list__link.disabled {
+  cursor: default;
+  opacity: 0.3;
+  outline: none;
+}
+
+.copyright__link.disabled:hover .copyright__icon,
+.copyright__link.disabled:focus .copyright__icon {
+  path {
+    fill: $basic-dark--500;
+  }
+}
+
+.social-list__link.disabled:hover .social-list__icon,
+.social-list__link.disabled:focus .social-list__icon {
+  path {
+    fill: $basic-dark--500;
+  }
+
+  &--mdfFb {
+    path {
+      fill: none;
+      stroke: $basic-dark--500;
+    }
+  }
+}
+
+// disabled-form
+.personal-data__input.disabled,
+.personal-data__input:disabled,
+.cat-program__radio.disabled + .cat-program__text,
+.cat-program__radio:disabled + .cat-program__text,
+.cat-program__radio.disabled + .cat-program__text::before,
+.user-comments__text.disabled,
+.user-comments__text:disabled,
+.cat-program__checkbox.disabled + .cat-program__text,
+.cat-program__checkbox:disabled + .cat-program__text,
+.cat-program__checkbox.disabled + .cat-program__text::before {
+  opacity: 0.4;
+  border-color: $basic-grey--450;
+  outline: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.personal-data__input.disabled + .personal-data__icon-email {
+  line,
+  path {
+    stroke: $basic-grey--450;
+  }
+}
+
+.personal-data__input.disabled + .personal-data__icon-tell {
+  g {
+    fill: $basic-grey--450;
+  }
+}
+
+/*error-form*/
+.personal-data__input.error-form {
+  outline: 2px solid $basic-pink;
+  outline-offset: -1px;
+}
+
+.personal-data__input.error-form + .personal-data__icon-email {
+  line,
+  path {
+    stroke: $basic-pink;
+  }
+}
+
+.personal-data__input.error-form + .personal-data__icon-tell {
+  g {
+    fill: $basic-pink;
+  }
+}

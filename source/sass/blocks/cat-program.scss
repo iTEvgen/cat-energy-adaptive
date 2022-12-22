@@ -119,6 +119,17 @@
   }
 }
 
+.cat-program__radio:hover + .cat-program__text::before,
+.cat-program__checkbox:hover + .cat-program__text::before {
+  border: 1px solid $basic-grey--450;
+}
+
+.cat-program__radio:focus + .cat-program__text::before,
+.cat-program__checkbox:focus + .cat-program__text::before {
+  outline: 2px solid $basic-dark--600;
+  outline-offset: -1px;
+}
+
 .cat-program__container {
   @media (min-width: $tablet-width) {
     display: grid;
