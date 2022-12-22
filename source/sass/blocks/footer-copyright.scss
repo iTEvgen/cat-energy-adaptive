@@ -8,6 +8,10 @@
   color: $basic-dark--600;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     column-gap: 22px;
   }
@@ -21,5 +25,14 @@
 .copyright__icon {
   path {
     fill: $basic-dark--500;
+  }
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  .copyright__icon {
+    path {
+      fill: $basic-green;
+    }
   }
 }

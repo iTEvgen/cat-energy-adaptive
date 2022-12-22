@@ -5,6 +5,8 @@
 .page__body {
   @include indent(0, 0);
   @include font-options();
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
   min-height: 100%;
   font-family: $arial;
@@ -12,15 +14,14 @@
   color: $basic-black;
   background-color: $basic-white;
 
-  // @media (min-width: $tablet-fix1) and (max-width: $tablet-fix2) {
-  //   width: 960px;
-  //   margin: 0 auto;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 1300px;
-  //   margin: 0 auto;
-  // }
+  @media (min-width: $desktop-width) {
+    &--mdfElem {
+      background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
+      background-position: top right, top;
+      background-size: 610px 694px, 100% 694px;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .page-main {
@@ -33,11 +34,6 @@
     margin-bottom: 35px;
     padding-top: 27px;
   }
-
-  // @media (min-width: $mobile-fix1) and (max-width: $mobile-fix2) {
-  //   width: 640px;
-  //   margin: 0 auto;
-  // }
 
   @media (min-width: $tablet-width) {
     &--catalog {
@@ -52,7 +48,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    
+    &--catalog {
+      margin-bottom: 86px;
+      padding-top: 79px;
+    }
+
+    &--form {
+      margin-bottom: 82px;
+      padding-top: 79px;
+    }
   }
 }
 
@@ -90,6 +94,13 @@ img {
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
+  }
+}
+
+.container {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
