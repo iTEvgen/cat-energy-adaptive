@@ -21,6 +21,12 @@
       background-size: 610px 694px, 100% 694px;
       background-repeat: no-repeat;
     }
+
+    @media (min-resolution: 2dppx) {
+      &--mdfElem {
+        background-image: url("../img/intro-bg-desk@2x.jpg"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
+      }
+    }
   }
 }
 

@@ -8,13 +8,18 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="cat-energy.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>Интернет магазин - cat-energy. Подбор программы</title>
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo logo-header" href="/">
-        <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle button" type="button">

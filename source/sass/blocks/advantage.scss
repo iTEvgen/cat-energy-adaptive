@@ -2,7 +2,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 11px;
+    margin-bottom: 6px;
   }
 }
 
@@ -62,19 +62,19 @@
   }
 
   &--mdfOne::before {
-    background-image: url("../../img/icon_leaf.svg");
+    background-image: url("../img/icon_leaf.svg");
   }
 
   &--mdfTwo::before {
-    background-image: url("../../img/icon_tub.svg");
+    background-image: url("../img/icon_tub.svg");
   }
 
   &--mdfThree::before {
-    background-image: url("../../img/icon_eat.svg");
+    background-image: url("../img/icon_eat.svg");
   }
 
   &--mdfFour::before {
-    background-image: url("../../img/icon_alarm.svg");
+    background-image: url("../img/icon_alarm.svg");
   }
 
   @media (max-width: $mobile-only-width) {
@@ -106,7 +106,7 @@
       right: 53px;
       width: 71px;
       height: 227px;
-      background-image: url("../../img/1.svg");
+      background-image: url("../img/1.svg");
     }
 
     &--mdfTwo::after {
@@ -114,7 +114,7 @@
       right: 15px;
       width: 113px;
       height: 229px;
-      background-image: url("../../img/2.svg");
+      background-image: url("../img/2.svg");
     }
 
     &--mdfThree::after {
@@ -122,7 +122,7 @@
       right: 13px;
       width: 112px;
       height: 232px;
-      background-image: url("../../img/3.svg");
+      background-image: url("../img/3.svg");
     }
 
     &--mdfFour::after {
@@ -130,7 +130,7 @@
       right: 5px;
       width: 121px;
       height: 227px;
-      background-image: url("../../img/4.svg");
+      background-image: url("../img/4.svg");
     }
   }
 

@@ -8,13 +8,18 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="cat-energy.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>Интернет магазин - cat-energy. спортивное питание для котов</title>
 </head>
 <body class="page__body page__body--mdfElem">
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo logo-header" href="/">
-        <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle button" type="button">
@@ -50,7 +55,11 @@
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
         </div>
         <figure class="intro__picture">
-          <img src="img/index-can-mobile-1@1x.png" width="280" height="270" alt="">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can@1x.png 1x, img/index-can@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet-1@1x.png 1x, img/index-can-tablet-1@1x.png 2x">
+            <img src="img/index-can-mobile-1@1x.png" srcset="img/index-can-mobile-1@2x.png 2x" width="280" height="270" alt="">
+          </picture>
         </figure>
         <div class="intro__link-wrapper">
           <a class="intro__link button" href="">подобрать программу</a>
@@ -114,10 +123,18 @@
           <div class="demonstration__list slider">
             <div class="demonstration__slider-wrap slider__list">
               <figure class="demonstration__image demonstration__image--mdfElemOne slider__item">
-                <img src="img/before-mobile-1@1x.png" alt="" width="280" height="209">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet-1@1x.png 1x, img/before-tablet-1@2x.png 2x">
+                  <img src="img/before-mobile-1@1x.png" srcset="img/before-mobile-1@2x.png 2x" width="280" height="209" alt="">
+                </picture>
               </figure>
               <figure class="demonstration__image demonstration__image--mdfElemTwo slider__item slider__item--current">
-                <img src="img/after-mobile-1@1x.png" alt=""  width="252" height="241">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet-1@1x.png 1x, img/after-tablet-1@2x.png 2x">
+                  <img src="img/after-mobile-1@1x.png" srcset="img/after-mobile-1@2x.png 2x" width="252" height="241" alt="">
+                </picture>
               </figure>
               <div class="demonstration__controls slider__controls">
                 <div class="demonstration__range-wrap">

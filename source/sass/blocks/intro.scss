@@ -22,16 +22,19 @@
   background-size: 320px 302px, 100% 302px;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-bg@2x.jpg"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding-top: 66px;
+    padding-top: 64px;
     background-color: $basic-white;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
+    padding-top: 24px;
     padding-bottom: 54px;
     margin-bottom: 81px;
     background-color: transparent;
@@ -60,7 +63,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 117px;
+    margin-left: 87px;
     margin-bottom: 41px;
   }
 
@@ -91,7 +94,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 112px;
+    margin-left: 88px;
     margin-bottom: 21px;
     font-size: 20px;
     line-height: 20px;
@@ -169,8 +172,7 @@
   @media (min-width: $tablet-width) {
     @include font-options(20px, 20px);
     width: 244px;
-    // margin-top: 28px;
-    margin-left: 112px;
+    margin-left: 83px;
     padding-top: 17px;
     padding-bottom: 17px;
   }

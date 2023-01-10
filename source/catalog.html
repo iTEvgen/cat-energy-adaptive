@@ -8,13 +8,18 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="cat-energy.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>Интернет магазин - cat-energy. Каталог продукции</title>
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo logo-header" href="/">
-        <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo-header__img" src="img/logo-mobile.svg" width="198" height="38" alt="Логотип cat-energy">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle button" type="button">
@@ -49,9 +54,12 @@
       <h2 class="visually-hidden">Питание для котиков</h2>
         <ul class="product-catalog__list card-list container">
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container" href="#">
+            <a class="card-list__container" href="#!">
               <figure class="card-list__picture picture-list">
-                <img class="picture-list__img" src="img/catalog-1-500-mobile@1x.png" width="68" height="86" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-1-500-tablet@1x.png 1x, img/catalog-1-500-tablet@2x.png 2x">
+                  <img class="picture-list__img" src="img/catalog-1-500-mobile@1x.png" srcset="img/catalog-1-500-mobile@2x.png 2x" width="68" height="86" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title header-four">Cat&nbsp;Energy<br> PRO 500&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -69,12 +77,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container card-list__container--mdfElem1" href="#">
+            <a class="card-list__container card-list__container--mdfElem1" href="#!">
               <figure class="card-list__picture  picture-list picture-list--mdfElem1">
-                <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-1-1000-mobile@1x.png" width="84" height="101" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-1-1000-tablet@1x.png 1x, img/catalog-1-1000-tablet@2x.png 2x">
+                  <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-1-1000-mobile@1x.png" srcset="img/catalog-1-1000-mobile@2x.png 2x" width="84" height="101" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title card-list__title--mdfElem1 header-four">Cat&nbsp;Energy<br> PRO 1000&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -92,12 +103,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container" href="#">
+            <a class="card-list__container" href="#!">
               <figure class="card-list__picture picture-list">
-                <img class="picture-list__img" src="img/catalog-2-500-mobile@1x.png" width="68" height="86" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-2-500-tablet@1x.png 1x, img/catalog-2-500-tablet@2x.png 2x">
+                  <img class="picture-list__img" src="img/catalog-2-500-mobile@1x.png" srcset="img/catalog-2-500-mobile@2x.png 2x" width="68" height="86" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title header-four">Cat&nbsp;Energy<br> PRO 500&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -115,12 +129,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container card-list__container--mdfElem1" href="#">
+            <a class="card-list__container card-list__container--mdfElem1" href="#!">
               <figure class="card-list__picture picture-list picture-list--mdfElem1">
-                <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-2-1000-mobile@1x.png" width="84" height="101" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-2-1000-tablet@1x.png 1x, img/catalog-2-1000-tablet@2x.png 2x">
+                  <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-2-1000-mobile@1x.png" srcset="img/catalog-2-1000-mobile@2x.png 2x" width="84" height="101" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title card-list__title--mdfElem1 header-four">Cat&nbsp;Energy<br> PRO 1000&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -138,12 +155,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container" href="#">
+            <a class="card-list__container" href="#!">
               <figure class="card-list__picture picture-list">
-                <img class="picture-list__img" src="img/catalog-3-500-mobile@1x.png" width="68" height="86" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-3-500-tablet@1x.png 1x, img/catalog-3-500-tablet@2x.png">
+                  <img class="picture-list__img" src="img/catalog-3-500-mobile@1x.png" srcset="img/catalog-3-500-mobile@2x.png 2x" width="68" height="86" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title header-four">Cat&nbsp;Energy<br> slim 500&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -161,12 +181,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container card-list__container--mdfElem1" href="#">
+            <a class="card-list__container card-list__container--mdfElem1" href="#!">
               <figure class="card-list__picture picture-list picture-list--mdfElem1">
-                <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-3-1000-mobile@1x.png" width="84" height="101" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-3-1000-tablet@1x.png 1x , img/catalog-3-1000-tablet@2x.png 2x">
+                  <img class="picture-list__img picture-list__img--mdfElem1" src="img/catalog-3-1000-mobile@1x.png" srcset="img/catalog-3-1000-mobile@2x.png 2x" width="84" height="101" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title card-list__title--mdfElem1 header-four">Cat&nbsp;Energy<br> slim 1000&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -184,12 +207,15 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item" aria-label="Карточка товара с кормом для котов">
-            <a class="card-list__container" href="#">
+            <a class="card-list__container" href="#!">
               <figure class="card-list__picture picture-list">
-                <img class="picture-list__img" src="img/catalog-4-500-mobile@1x.png" width="68" height="86" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-4-500-tablet@1x.png 1x, img/catalog-4-500-tablet@2x.png">
+                  <img class="picture-list__img" src="img/catalog-4-500-mobile@1x.png" srcset="img/catalog-4-500-mobile@2x.png 2x" width="68" height="86" alt="">
+                </picture>
               </figure>
               <h3 class="card-list__title header-four">Cat&nbsp;Energy<br> slim 500&nbsp;г</h3>
               <dl class="card-list__stats stats-list">
@@ -207,7 +233,7 @@
                 </div>
               </dl>
             </a>
-            <a class="card-list__button button" href="blank.html">Заказать</a>
+            <a class="card-list__button button" href="#!">Заказать</a>
           </li>
           <li class="card-list__item card-list__item--all-item" aria-label="Карточка показывает все товары">
             <div class="card-list__container card-list__container--all-item">
@@ -217,7 +243,7 @@
               </svg>
               <h3 class="card-list__title card-list__title--all-item header-four">Показать еще 100500 товаров</h3>
               <p class="card-list__lead">На самом деле вкусов<br> гораздо больше!</p>
-              <a class="card-list__button card-list__button--all-item button" href="blank.html">показать все</a>
+              <a class="card-list__button card-list__button--all-item button" href="#!">показать все</a>
             </div>
           </li>
         </ul>
@@ -237,7 +263,7 @@
               </div>
             </dl>
             <div class="product-card__wrapper-button">
-              <a class="product-card__button button" href="blank.html">Заказать</a>
+              <a class="product-card__button button" href="#!">Заказать</a>
             </div>
           </li>
           <li class="product-card__item">
@@ -251,7 +277,7 @@
               </div>
             </dl>
             <div class="product-card__wrapper-button">
-              <a class="product-card__button button" href="blank.html">Заказать</a>
+              <a class="product-card__button button" href="#!">Заказать</a>
             </div>
           </li>
           <li class="product-card__item">
@@ -265,7 +291,7 @@
               </div>
             </dl>
             <div class="product-card__wrapper-button">
-              <a class="product-card__button button" href="blank.html">Заказать</a>
+              <a class="product-card__button button" href="#!">Заказать</a>
             </div>
           </li>
           <li class="product-card__item">
@@ -279,7 +305,7 @@
               </div>
             </dl>
             <div class="product-card__wrapper-button">
-              <a class="product-card__button button" href="blank.html">Заказать</a>
+              <a class="product-card__button button" href="#!">Заказать</a>
             </div>
           </li>
         </ul>
