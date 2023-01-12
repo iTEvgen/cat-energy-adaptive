@@ -34,16 +34,11 @@
 
 .social-list__icon {
   display: block;
-
-  path {
     fill: $basic-dark--500;
-  }
 
   &--mdfFb {
-    path {
-      fill: none;
-      stroke: $basic-dark--500;
-    }
+    fill: none;
+    stroke: $basic-dark--500;
   }
 
   @media (min-width: $tablet-width) {
@@ -67,15 +62,11 @@
 .social-list__link:hover,
 .social-list__link:focus {
   .social-list__icon {
-    path {
-      fill: $basic-green;
-    }
+    fill: $basic-green;
 
     &--mdfFb {
-      path {
-        fill: none;
-        stroke: $basic-green;
-      }
+      fill: none;
+      stroke: $basic-green;
     }
   }
 }

@@ -62,19 +62,19 @@
   }
 
   &--mdfOne::before {
-    background-image: url("../img/icon_leaf.svg");
+    background-image: url("../img/leaf.svg");
   }
 
   &--mdfTwo::before {
-    background-image: url("../img/icon_tub.svg");
+    background-image: url("../img/tub.svg");
   }
 
   &--mdfThree::before {
-    background-image: url("../img/icon_eat.svg");
+    background-image: url("../img/eat.svg");
   }
 
   &--mdfFour::before {
-    background-image: url("../img/icon_alarm.svg");
+    background-image: url("../img/alarm.svg");
   }
 
   @media (max-width: $mobile-only-width) {
