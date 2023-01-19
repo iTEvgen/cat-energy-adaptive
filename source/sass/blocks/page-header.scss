@@ -68,13 +68,13 @@
 //page-header
 .page-header {
   @media (min-width: $tablet-width) {
-    padding-top: 34px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 5px;
-    padding-top: 64px;
+    padding-top: 53px;
   }
 }
 
@@ -86,13 +86,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto 1fr;
-    align-items: start;
+    align-items: end;
     column-gap: 20px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
     max-width: 1220px;
     margin: 0 auto;
     padding-left: 40px;
@@ -128,9 +129,18 @@
 .logo-header__img {
   display: block;
 
-
   @media (max-width: $mobile-only-width) {
     transform: translateX(-40px);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

@@ -23,16 +23,12 @@
 }
 
 .copyright__icon {
-  path {
-    fill: $basic-dark--500;
-  }
+  fill: $basic-dark--500;
 }
 
 .copyright__link:hover,
 .copyright__link:focus {
   .copyright__icon {
-    path {
-      fill: $basic-green;
-    }
+    fill: $basic-green;
   }
 }

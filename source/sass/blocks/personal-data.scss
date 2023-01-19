@@ -110,15 +110,19 @@
   }
 }
 
+.personal-data__icon-email {
+  stroke: $basic-dark--700;
+  fill: none;
+}
+
+.personal-data__icon-tell {
+  fill: $basic-dark--700;
+}
+
 .personal-data__input:focus + .personal-data__icon-email {
-  line,
-  path {
-    stroke: $basic-green;
-  }
+  stroke: $basic-green;
 }
 
 .personal-data__input:focus + .personal-data__icon-tell {
-  g {
-    fill: $basic-green;
-  }
+   fill: $basic-green;
 }

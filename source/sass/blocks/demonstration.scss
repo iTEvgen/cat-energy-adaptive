@@ -22,14 +22,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 52px;
+    padding-bottom: 20px;
     background-image: linear-gradient(to bottom, $basic-white 57.3%, $basic-grey--100 57.3%);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(to bottom, $basic-white 28.8%, $basic-grey--100 28.8%);
+    background-image: linear-gradient(to bottom, $basic-white 29.5%, $basic-grey--100 29.5%);
   }
 }
 
@@ -42,7 +42,7 @@
 .demonstration__grid {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: auto 648px;
+    grid-template-columns: auto 690px;
   }
 }
 
@@ -53,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      margin-bottom: 96px;
+      margin-bottom: 66px;
     }
   }
 
@@ -73,7 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 51px;
+    margin-top: 57px;
     margin-bottom: 146px;
   }
 }
@@ -110,12 +110,13 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    justify-content: end;
     margin-bottom: 0;
   }
 }
@@ -131,37 +132,51 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include margin-reset;
+
     overflow: hidden;
     width: 50%;
 
-    img {
-      width: 100%;
-      height: 500px;
-    }
-
     &--mdfElemOne {
       img {
-        margin-right: -49%;
+        width: 354px;
+        height: 620px;
+        margin-right: 0;
       }
     }
 
     &--mdfElemTwo {
+      padding-top: 8px;
+
       img {
-        margin-left: -44%;
+        width: 354px;
+        height: 607px;
+        margin-left: 0;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    height: 649px;
+    height: 655px;
 
     &--mdfElemOne {
-      width: 363px;
+      width: 403px;
+
+      img {
+        width: 365px;
+        height: 536px;
+      }
     }
 
     &--mdfElemTwo {
-      width: 285px;
-      background-image: linear-gradient(to bottom, $basic-white 28.8%, $basic-grey--150 28.8%);
+      width: 287px;
+      padding-top: 0;
+      background-image: linear-gradient(to bottom, $basic-white 29.5%, $basic-grey--150 29.5%);
+
+      img {
+        width: 325px;
+        height: 536px;
+      }
     }
   }
 }
@@ -174,10 +189,11 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 32px;
     column-gap: 11px;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,6 +201,8 @@
     bottom: 64px;
     column-gap: 22px;
     justify-content: end;
+    right: 0;
+    width: 94.72%;
   }
 }
 
@@ -385,15 +403,16 @@
   flex-grow: 1;
   line-height: 20px;
 
-  span {
-    max-width: 150px;
-  }
+  // span {
+  //   max-width: 150px;
+  // }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
     align-self: center;
+    justify-content: flex-end;
     margin-left: auto;
     row-gap: 9px;
     font-size: 20px;
