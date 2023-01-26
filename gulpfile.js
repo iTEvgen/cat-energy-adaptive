@@ -6,6 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const posthtml =require("gulp-posthtml");
+const include = require("posthtml-include");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
@@ -37,6 +39,9 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
@@ -159,11 +164,11 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  sprite,
   gulp.parallel(
     styles,
     html,
     scripts,
-    sprite,
     createWebp
   ),
 );
@@ -174,11 +179,11 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  sprite,
   gulp.parallel(
     styles,
     html,
     scripts,
-    sprite,
     createWebp
   ),
   gulp.series(
