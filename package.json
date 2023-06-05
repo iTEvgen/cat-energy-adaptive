@@ -49,6 +49,5 @@
   ],
   "engines": {
     "node": "18.13.0"
-  },
-  "dependencies": {}
+  }
 }
