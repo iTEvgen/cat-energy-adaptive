@@ -69,31 +69,31 @@
 
 .contacts__map-wrap {
   height: 362px;
-  background-image: url("../img/mobile-map-@1x.jpg");
+  background-image: url("../img/mobile-map-@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile-map-@2x.jpg");
+    background-image: url("../img/mobile-map-@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: url("../img/tablet-map@1x.jpg");
+    background-image: url("../img/tablet-map@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet-map@2x.jpg");
+      background-image: url("../img/tablet-map@2x.webp");
     }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    background-image: url("../img/desk-map@1x.jpg");
+    background-image: url("../img/desk-map@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/desk-map@2x.jpg");
+      background-image: url("../img/desk-map@2x.webp");
     }
   }
 }
