@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     &--mdfElem {
-      background-image: url("../img/intro-bg-desk@1x.jpg"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
+      background-image: url("../img/intro-bg-desk@1x.webp"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
       background-position: top right, top;
       background-size: 610px 694px, 100% 694px;
       background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 
     @media (min-resolution: 2dppx) {
       &--mdfElem {
-        background-image: url("../img/intro-bg-desk@2x.jpg"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
+        background-image: url("../img/intro-bg-desk@2x.webp"), linear-gradient(to right, $basic-white 50%, #64a73d 50%);
       }
     }
   }
@@ -116,12 +116,11 @@ img {
   padding-bottom: 9px;
   font-family: $oswald;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
   border: none;
   cursor: pointer;
-  background-color: $basic-green;
+  background-color: $basic-green--150;
   box-sizing: border-box;
 }

@@ -16,14 +16,14 @@
   padding-top: 27px;
   font-family: $oswald;
   color: $basic-white;
-  background-image: url("../img/intro-bg@1x.jpg"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
+  background-image: url("../img/intro-bg@1x.webp"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 320px 302px, 100% 302px;
   box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-bg@2x.jpg"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
+    background-image: url("../img/intro-bg@2x.webp"), linear-gradient(to right, #64a73d 50%, #62a53b 50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -162,7 +162,7 @@
 
   &:hover,
   &:focus {
-    background-color: $basic-green--100;
+    background-color: $basic-green--200;
   }
 
   &:active {
